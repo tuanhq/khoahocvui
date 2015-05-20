@@ -1,0 +1,26 @@
+@package
+
+import java.io.Serializable;
+import com.ligerdev.appbase.utils.db.AntTable;
+import com.ligerdev.appbase.utils.db.AntColumn;
+@import
+@AntTable(catalog="@catalog", name="@table", label="@table", key="@key")
+public class @className implements Serializable {
+
+@field
+	public @className(){
+	}
+	
+	public @className(@paramsContructor){
+		this();
+@contructorAssign
+	}
+	
+	@set-get
+	
+	@Override
+	public String toString() {
+		return "["@toString
+			+ "]";
+	}
+}

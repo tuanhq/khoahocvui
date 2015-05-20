@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    
+    <max_question>5</max_question>
+    <publish_ws>http://0.0.0.0:8080/api?</publish_ws>
+    <folder_monfee_cdr>/opt/cdr</folder_monfee_cdr>
+    
+    <first_question>
+        <expression>0 0 8 * * ?</expression>
+    </first_question>
+    
+	<score>
+		<register>2000</register>
+		<reregister>1000</reregister>
+		<renew>500</renew>
+		<answer>100</answer>
+	</score>
+
+	<mps_listener>
+		<mo>http://0.0.0.0:8888/molistener?wsdl</mo>
+		<subscribe>http://0.0.0.0:8888/subscribe?wsdl</subscribe>
+		<content>http://0.0.0.0:8888/getcontent?wsdl</content>
+		<monthfee>http://0.0.0.0:8888/receiveresult?wsdl</monthfee>
+	</mps_listener>
+
+	<mt_sender fake="true" max_tps="25">
+		<url>http://0.0.0.0:8888/mtsender</url>
+		<user></user>
+		<pass></pass>
+		<shortcode></shortcode>
+		<alias></alias>
+		<params></params>
+	</mt_sender>
+
+	<subs_update>
+		<url>http://0.0.0.0:8888/subs_update</url>
+	</subs_update>
+
+	<mo_syntax>
+		<help>help;hd</help>
+		<answer>1;2</answer>
+		<last_question>ch</last_question>
+		<ignore_question>tc</ignore_question>
+		<accept_question>tt</accept_question>
+		<view_score>diem</view_score>
+	</mo_syntax>
+	
+</configuration>

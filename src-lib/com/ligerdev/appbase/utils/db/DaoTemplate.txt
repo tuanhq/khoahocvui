@@ -1,0 +1,106 @@
+@package
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import org.apache.log4j.Logger;
+import com.ligerdev.appbase.utils.db.BaseDAO;
+@import
+
+public class @className {
+
+	private static Logger logger = Logger.getLogger("LOG");
+	private static BaseDAO dbpool = BaseDAO.getInstance(BaseDAO.POOL_NAME_MAIN);
+	
+	public static @dto get(String transid, Object @key){
+		Connection conn = null; 
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		String sql = "SELECT * FROM @tableName WHERE @primary = ?"; 
+		try {
+			conn = dbpool.getConnection();
+			stmt = conn.prepareStatement(sql);
+			@setKey
+			rs = stmt.executeQuery();
+			
+			if(rs.next()){
+				@dto bean = new @dto();
+@setBean
+				logger.info(transid + ", get @tableName, key = " + @key + ", bean = " + String.valueOf(bean));
+				return bean;
+			}
+		} catch (Exception e) {
+			logger.info(transid + ", Exception: " + e.getMessage(), e);
+		} finally {
+			dbpool.releaseAll(rs, stmt, conn);
+		}
+		return null;
+	}
+	
+	public static int insert(String transid, @dto bean){
+		Connection conn = null; 
+		PreparedStatement stmt = null;
+		String sql = "INSERT INTO @tableName (@columnInsertName) VALUES (@columnInsertCount)"; 
+		try {
+			conn = dbpool.getConnection();
+			stmt = conn.prepareStatement(sql);
+@setStmtInsert
+			int result = stmt.executeUpdate();
+			if(result > 0){
+				logger.info(transid + ", insert @tableName success, bean = " + String.valueOf(bean));
+			} else {
+				logger.info(transid + ", insert @tableName fail, bean = " + String.valueOf(bean));
+			}
+		} catch (Exception e) {
+			logger.info(transid + ", Exception: " + e.getMessage(), e);
+		} finally {
+			dbpool.releaseAll(stmt, conn);
+		}
+		return -1;
+	}
+	
+	public static int update(String transid, @dto bean){
+		Connection conn = null; 
+		PreparedStatement stmt = null;
+		String sql = "UPDATE @tableName SET @columnUpdates WHERE @primary = ?"; 
+		try {
+			conn = dbpool.getConnection();
+			stmt = conn.prepareStatement(sql);
+@setStmtUpdate
+			int result = stmt.executeUpdate();
+			if(result > 0){
+				logger.info(transid + ", update @tableName success, bean = " + String.valueOf(bean));
+			} else {
+				logger.info(transid + ", update @tableName fail, bean = " + String.valueOf(bean));
+			}
+		} catch (Exception e) {
+			logger.info(transid + ", Exception: " + e.getMessage(), e);
+		} finally {
+			dbpool.releaseAll(stmt, conn);
+		}
+		return -1;
+	}
+	
+	public static int delete(String transid, Object @key){
+		Connection conn = null; 
+		PreparedStatement stmt = null;
+		String sql = "DELETE @tableName WHERE @primary = ?"; 
+		try {
+			conn = dbpool.getConnection();
+			stmt = conn.prepareStatement(sql);
+			@setKey
+			int result = stmt.executeUpdate();
+			
+			if(result > 0){
+				logger.info(transid + ", delete @tableName success, @key = " + @key);
+			} else {
+				logger.info(transid + ", delete @tableName fail, @key = " + @key);
+			}
+		} catch (Exception e) {
+			logger.info(transid + ", Exception: " + e.getMessage(), e);
+		} finally {
+			dbpool.releaseAll(stmt, conn);
+		}
+		return -1;
+	}
+}

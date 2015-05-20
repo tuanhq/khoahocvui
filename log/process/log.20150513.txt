@@ -1,0 +1,67 @@
+INFO [2015-05-13 22:49:53,187] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-05-13 22:49:53,281] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-05-13 22:49:53,281] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-05-13 22:49:53,296] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-05-13 22:49:53,296] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-05-13 22:49:53,296] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-05-13 22:49:53,296] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-05-13 22:49:53,296] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-05-13 22:49:53,296] - [ConfigsReader.getString.198   ] - property: score|register = 2000
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: score|reregister = 1000
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: score|renew = 500
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mps_listener|subscribe = http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mps_listener|content = http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mps_listener|monthfee = http://0.0.0.0:8888/receiveresult?wsdl
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: publish_ws = http://0.0.0.0:8080/api?
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: max_question = 5
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: subs_update|url = http://0.0.0.0:8888/subs_update
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getList.240     ] - property: first_question|expression = list has size = 1
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: folder_monfee_cdr = /opt/cdr
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|max_tps = 25
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|fake = true
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mt_sender|url = http://0.0.0.0:8888/mtsender
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mt_sender|user = 
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mt_sender|pass = 
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mt_sender|alias = 
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mt_sender|shortcode = 
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.getString.198   ] - property: mt_sender|params = 
+INFO [2015-05-13 22:49:53,312] - [ConfigsReader.loadFile.37     ] - Load config successfully, file = D:\project\GameshowDemo\.\config\config.xml
+
+
+INFO [2015-05-13 22:49:53,375] - [QueueIOUtils.loadQueue.162    ] - Load queue chargeReminderQueue, size = 0
+INFO [2015-05-13 22:49:53,421] - [QueueMonitor$1.run.45         ] - Thread-5 is started ...
+INFO [2015-05-13 22:49:53,421] - [QueueIOUtils.loadQueue.162    ] - Load queue firstQuesQueue, size = 0
+INFO [2015-05-13 22:49:53,421] - [QueueIOUtils.loadQueue.162    ] - Load queue mtBroadcastQueue, size = 0
+INFO [2015-05-13 22:49:53,421] - [QueueIOUtils.loadQueue.162    ] - Load queue cdrHisQueue, size = 0
+INFO [2015-05-13 22:49:53,421] - [QueueIOUtils.loadQueue.162    ] - Load queue mtHisQueue, size = 0
+INFO [2015-05-13 22:49:53,421] - [QueueIOUtils.loadQueue.162    ] - Load queue scoreHisQueue, size = 0
+INFO [2015-05-13 22:49:53,421] - [QueueIOUtils.loadQueue.162    ] - Load queue mtQueue, size = 0
+INFO [2015-05-13 22:49:53,453] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay1Queue, size = 0
+INFO [2015-05-13 22:49:53,453] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay2Queue, size = 0
+INFO [2015-05-13 22:50:00,906] - [DBPoolNormal.createNewConnection.194] - Create new connection fail ... (com.mysql.jdbc.Driver, smsgw, 123456, jdbc:mysql://localhost:3306/vuadaubep?autoReconnect=true&useUnicode=true&characterEncoding=utf8), Exception: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+INFO [2015-05-13 22:50:12,687] - [DBPoolNormal.createNewConnection.194] - Create new connection fail ... (com.mysql.jdbc.Driver, smsgw, 123456, jdbc:mysql://localhost:3306/vuadaubep?autoReconnect=true&useUnicode=true&characterEncoding=utf8), Exception: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+INFO [2015-05-13 22:50:24,546] - [DBPoolNormal.createNewConnection.194] - Create new connection fail ... (com.mysql.jdbc.Driver, smsgw, 123456, jdbc:mysql://localhost:3306/vuadaubep?autoReconnect=true&useUnicode=true&characterEncoding=utf8), Exception: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+INFO [2015-05-13 22:50:36,421] - [DBPoolNormal.createNewConnection.194] - Create new connection fail ... (com.mysql.jdbc.Driver, smsgw, 123456, jdbc:mysql://localhost:3306/vuadaubep?autoReconnect=true&useUnicode=true&characterEncoding=utf8), Exception: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+INFO [2015-05-13 22:50:48,281] - [DBPoolNormal.createNewConnection.194] - Create new connection fail ... (com.mysql.jdbc.Driver, smsgw, 123456, jdbc:mysql://localhost:3306/vuadaubep?autoReconnect=true&useUnicode=true&characterEncoding=utf8), Exception: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+INFO [2015-05-13 22:50:53,578] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-05-13 22:50:53,734] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-13 22:50:53,843] - [QuestionFactory.load.99       ] - Found 29 questions. ids = ;8;9;10;11;12;13;14;15;16;38;37;36;35;34;33;32;31;30;29;28;27;26;25;24;23;22;21;20;19;
+INFO [2015-05-13 22:50:53,906] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-05-13 22:50:54,359] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: MainProcess
+INFO [2015-05-13 22:50:54,375] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2015-05-13 22:50:54,375] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2015-05-13 22:50:54,375] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2015-05-13 22:50:54,375] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2015-05-13 22:50:54,375] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2015-05-13 22:50:54,375] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2015-05-13 22:50:54,406] - [JobsMonitor.run.36            ] - Thread-33 is started ...
+INFO [2015-05-13 22:50:54,453] - [QuartzUtils.start.97          ] - Created schedule: com.vas.aps.processor.LoadFirstQues, exps: |0 0 8 * * ?
+INFO [2015-05-13 22:50:55,453] - [MainAps.initProcess.83        ] - Published WS API: http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-05-13 22:50:55,468] - [MainAps.initProcess.86        ] - Published WS API: http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-13 22:50:55,468] - [MainAps.initProcess.89        ] - Published WS API: http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-05-13 22:50:55,781] - [MainAps.initProcess.92        ] - Published WS API: http://0.0.0.0:8080/api?
+INFO [2015-05-13 22:50:55,781] - [AbsApplication.run.68         ] - ============= Application started (v1.0.0)==============
+INFO [2015-05-13 22:53:00,671] - [WsMonthfee.main.50            ] - Published WS URL: http://127.0.0.1:8888/receiveresult?wsdl
+INFO [2015-05-13 23:49:45,062] - [WsMonthfee.main.50            ] - Published WS URL: http://127.0.0.1:8888/receiveresult?wsdl

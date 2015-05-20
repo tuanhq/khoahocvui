@@ -1,0 +1,158 @@
+INFO [2015-05-11 22:17:50,821] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-05-11 22:17:50,896] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-05-11 22:17:50,906] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-05-11 22:17:50,911] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-05-11 22:17:50,911] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-05-11 22:17:50,911] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-05-11 22:17:50,912] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-05-11 22:17:50,912] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-05-11 22:17:50,912] - [ConfigsReader.getString.198   ] - property: score|register = 2000
+INFO [2015-05-11 22:17:50,912] - [ConfigsReader.getString.198   ] - property: score|reregister = 1000
+INFO [2015-05-11 22:17:50,913] - [ConfigsReader.getString.198   ] - property: score|renew = 500
+INFO [2015-05-11 22:17:50,913] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-05-11 22:17:50,913] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-11 22:17:50,913] - [ConfigsReader.getString.192   ] - Exception: null, can not load property: mps_listener|subscibe
+INFO [2015-05-11 22:18:51,514] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-05-11 22:18:51,531] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-05-11 22:18:51,532] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-05-11 22:18:51,534] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-05-11 22:18:51,535] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-05-11 22:18:51,535] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-05-11 22:18:51,535] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-05-11 22:18:51,535] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-05-11 22:18:51,535] - [ConfigsReader.getString.198   ] - property: score|register = 2000
+INFO [2015-05-11 22:18:51,539] - [ConfigsReader.getString.198   ] - property: score|reregister = 1000
+INFO [2015-05-11 22:18:51,539] - [ConfigsReader.getString.198   ] - property: score|renew = 500
+INFO [2015-05-11 22:18:51,539] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-05-11 22:18:51,539] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-11 22:18:51,546] - [ConfigsReader.getString.198   ] - property: mps_listener|subscribe = http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-05-11 22:18:51,546] - [ConfigsReader.getString.198   ] - property: mps_listener|content = http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-05-11 22:18:51,547] - [ConfigsReader.getString.198   ] - property: mps_listener|monthfee = http://0.0.0.0:8888/receiveresult?wsdl
+INFO [2015-05-11 22:18:51,547] - [ConfigsReader.getString.198   ] - property: publish_ws = http://0.0.0.0:8080/api?
+INFO [2015-05-11 22:18:51,547] - [ConfigsReader.getString.198   ] - property: max_question = 5
+INFO [2015-05-11 22:18:51,547] - [ConfigsReader.getString.198   ] - property: subs_update|url = http://0.0.0.0:8888/subs_update
+INFO [2015-05-11 22:18:51,548] - [ConfigsReader.getList.240     ] - property: first_question|expression = list has size = 1
+INFO [2015-05-11 22:18:51,548] - [ConfigsReader.getString.198   ] - property: folder_monfee_cdr = /opt/cdr
+INFO [2015-05-11 22:18:51,548] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|max_tps = 25
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|fake = true
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getString.198   ] - property: mt_sender|url = http://0.0.0.0:8888/mtsender
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getString.198   ] - property: mt_sender|user = 
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getString.198   ] - property: mt_sender|pass = 
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getString.198   ] - property: mt_sender|alias = 
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getString.198   ] - property: mt_sender|shortcode = 
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.getString.198   ] - property: mt_sender|params = 
+INFO [2015-05-11 22:18:51,550] - [ConfigsReader.loadFile.37     ] - Load config successfully, file = /media/Data/UWorkspace/Sixcom/GameshowDemo/./config/config.xml
+
+
+INFO [2015-05-11 22:18:51,581] - [QueueIOUtils.loadQueue.162    ] - Load queue chargeReminderQueue, size = 0
+INFO [2015-05-11 22:18:51,587] - [QueueMonitor$1.run.45         ] - Thread-6 is started ...
+INFO [2015-05-11 22:18:51,588] - [QueueIOUtils.loadQueue.162    ] - Load queue firstQuesQueue, size = 0
+INFO [2015-05-11 22:18:51,588] - [QueueIOUtils.loadQueue.162    ] - Load queue mtBroadcastQueue, size = 0
+INFO [2015-05-11 22:18:51,589] - [QueueIOUtils.loadQueue.162    ] - Load queue cdrHisQueue, size = 0
+INFO [2015-05-11 22:18:51,589] - [QueueIOUtils.loadQueue.162    ] - Load queue mtHisQueue, size = 0
+INFO [2015-05-11 22:18:51,589] - [QueueIOUtils.loadQueue.162    ] - Load queue scoreHisQueue, size = 0
+INFO [2015-05-11 22:18:51,590] - [QueueIOUtils.loadQueue.162    ] - Load queue mtQueue, size = 0
+INFO [2015-05-11 22:18:51,596] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay1Queue, size = 0
+INFO [2015-05-11 22:18:51,596] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay2Queue, size = 0
+INFO [2015-05-11 22:18:52,410] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-05-11 22:18:52,583] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 22:18:52,668] - [QuestionFactory.load.99       ] - Found 29 questions. ids = ;8;9;10;11;12;13;14;15;16;38;37;36;35;34;33;32;31;30;29;28;27;26;25;24;23;22;21;20;19;
+INFO [2015-05-11 22:18:52,677] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-05-11 22:18:52,839] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: MainProcess
+INFO [2015-05-11 22:18:52,884] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2015-05-11 22:18:52,885] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2015-05-11 22:18:52,887] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2015-05-11 22:18:52,887] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2015-05-11 22:18:52,887] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2015-05-11 22:18:52,887] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2015-05-11 22:18:52,889] - [JobsMonitor.run.36            ] - Thread-33 is started ...
+INFO [2015-05-11 22:18:52,906] - [QuartzUtils.start.97          ] - Created schedule: com.vas.aps.processor.LoadFirstQues, exps: |0 0 8 * * ?
+INFO [2015-05-11 22:18:53,535] - [MainAps.initProcess.83        ] - Published WS API: http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-05-11 22:18:53,546] - [MainAps.initProcess.86        ] - Published WS API: http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-11 22:18:53,561] - [MainAps.initProcess.89        ] - Published WS API: http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-05-11 22:18:53,690] - [MainAps.initProcess.92        ] - Published WS API: http://0.0.0.0:8080/api?
+INFO [2015-05-11 22:18:53,690] - [AbsApplication.run.68         ] - ============= Application started (v1.0.0)==============
+INFO [2015-05-11 22:19:14,073] - [LDInterceptor.run.19          ] - Call the shutdown routine
+INFO [2015-05-11 22:19:14,073] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,074] - [QueueIOUtils.saveQueue.133    ] - Queue is blank => ignore save
+INFO [2015-05-11 22:19:14,083] - [DBPoolNormal.closeConnsInPool.182] - Close connections in pool 'main' successfully
+INFO [2015-05-11 23:02:27,359] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: score|register = 2000
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: score|reregister = 1000
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: score|renew = 500
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mps_listener|subscribe = http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mps_listener|content = http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mps_listener|monthfee = http://0.0.0.0:8888/receiveresult?wsdl
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: publish_ws = http://0.0.0.0:8080/api?
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: max_question = 5
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: subs_update|url = http://0.0.0.0:8888/subs_update
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getList.240     ] - property: first_question|expression = list has size = 1
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: folder_monfee_cdr = /opt/cdr
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|max_tps = 25
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|fake = true
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mt_sender|url = http://0.0.0.0:8888/mtsender
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mt_sender|user = 
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mt_sender|pass = 
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mt_sender|alias = 
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mt_sender|shortcode = 
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.getString.198   ] - property: mt_sender|params = 
+INFO [2015-05-11 23:02:27,453] - [ConfigsReader.loadFile.37     ] - Load config successfully, file = D:\project\GameshowDemo\.\config\config.xml
+
+
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue chargeReminderQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue firstQuesQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue mtBroadcastQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue cdrHisQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue mtHisQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue scoreHisQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue mtQueue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay1Queue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay2Queue, size = 0
+INFO [2015-05-11 23:02:27,468] - [QueueMonitor$1.run.45         ] - Thread-5 is started ...
+INFO [2015-05-11 23:02:28,000] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-05-11 23:02:28,078] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:02:28,093] - [QuestionFactory.load.99       ] - Found 29 questions. ids = ;8;9;10;11;12;13;14;15;16;38;37;36;35;34;33;32;31;30;29;28;27;26;25;24;23;22;21;20;19;
+INFO [2015-05-11 23:02:28,093] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-05-11 23:02:28,171] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: MainProcess
+INFO [2015-05-11 23:02:28,218] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2015-05-11 23:02:28,218] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2015-05-11 23:02:28,234] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2015-05-11 23:02:28,234] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2015-05-11 23:02:28,234] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2015-05-11 23:02:28,234] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2015-05-11 23:02:28,234] - [JobsMonitor.run.36            ] - Thread-33 is started ...
+INFO [2015-05-11 23:02:28,250] - [QuartzUtils.start.97          ] - Created schedule: com.vas.aps.processor.LoadFirstQues, exps: |0 0 8 * * ?
+INFO [2015-05-11 23:02:29,062] - [MainAps.initProcess.83        ] - Published WS API: http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-05-11 23:02:29,078] - [MainAps.initProcess.86        ] - Published WS API: http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-05-11 23:02:29,078] - [MainAps.initProcess.89        ] - Published WS API: http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-05-11 23:02:29,265] - [MainAps.initProcess.92        ] - Published WS API: http://0.0.0.0:8080/api?
+INFO [2015-05-11 23:02:29,265] - [AbsApplication.run.68         ] - ============= Application started (v1.0.0)==============
+INFO [2015-05-11 23:04:28,078] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:06:28,078] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:08:28,093] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:10:28,093] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:12:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:14:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:16:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:18:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:20:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:22:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:24:28,109] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:26:28,125] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-05-11 23:28:28,125] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
