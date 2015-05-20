@@ -10,9 +10,9 @@
     </first_question>
     
 	<score>
-		<register>2000</register>
-		<reregister>1000</reregister>
-		<renew>500</renew>
+		<register>500</register>
+		<reregister>500</reregister>
+		<renew>300</renew>
 		<answer>100</answer>
 	</score>
 
