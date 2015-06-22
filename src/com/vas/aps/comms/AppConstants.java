@@ -17,6 +17,10 @@ public class AppConstants {
 	public static final String CHANNEL_WEB = "WEB";
 	public static final String CHANNEL_SYS = "SYS";
 	
+	//buy question
+	
+	public static final int  numberQuestionBuy = 5;
+	
 	
 	// score his
 	public static final String SCORE_HIS_REASON_CMS = "CMS";

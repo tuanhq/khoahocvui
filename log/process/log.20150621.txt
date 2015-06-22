@@ -1,0 +1,556 @@
+INFO [2015-06-21 23:20:44,562] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-06-21 23:20:44,671] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-06-21 23:20:44,671] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-06-21 23:20:44,718] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-06-21 23:20:44,718] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: score|register = 500
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: score|reregister = 500
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: score|renew = 300
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mps_listener|subscribe = http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mps_listener|content = http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mps_listener|monthfee = http://0.0.0.0:8888/receiveresult?wsdl
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: publish_ws = http://0.0.0.0:8080/api?
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: max_question = 5
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: subs_update|url = http://0.0.0.0:8888/subs_update
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getList.240     ] - property: first_question|expression = list has size = 1
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: folder_monfee_cdr = /opt/cdr
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|max_tps = 25
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|fake = true
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mt_sender|url = http://0.0.0.0:8888/mtsender
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mt_sender|user = 
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mt_sender|pass = 
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mt_sender|alias = 
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mt_sender|shortcode = 
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.getString.198   ] - property: mt_sender|params = 
+INFO [2015-06-21 23:20:44,734] - [ConfigsReader.loadFile.37     ] - Load config successfully, file = D:\project\khoahocvui\.\config\config.xml
+
+
+INFO [2015-06-21 23:20:44,921] - [QueueIOUtils.loadQueue.162    ] - Load queue chargeReminderQueue, size = 0
+INFO [2015-06-21 23:20:45,062] - [QueueIOUtils.loadQueue.162    ] - Load queue firstQuesQueue, size = 0
+INFO [2015-06-21 23:20:45,062] - [QueueIOUtils.loadQueue.162    ] - Load queue mtBroadcastQueue, size = 0
+INFO [2015-06-21 23:20:45,062] - [QueueIOUtils.loadQueue.162    ] - Load queue cdrHisQueue, size = 0
+INFO [2015-06-21 23:20:45,062] - [QueueMonitor$1.run.45         ] - Thread-5 is started ...
+INFO [2015-06-21 23:20:45,078] - [QueueIOUtils.loadQueue.162    ] - Load queue mtHisQueue, size = 0
+INFO [2015-06-21 23:20:45,078] - [QueueIOUtils.loadQueue.162    ] - Load queue scoreHisQueue, size = 0
+INFO [2015-06-21 23:20:45,078] - [QueueIOUtils.loadQueue.162    ] - Load queue mtQueue, size = 0
+INFO [2015-06-21 23:20:45,093] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay1Queue, size = 0
+INFO [2015-06-21 23:20:45,093] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay2Queue, size = 0
+INFO [2015-06-21 23:20:46,437] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-06-21 23:20:46,671] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:20:46,796] - [QuestionFactory.load.99       ] - Found 29 questions. ids = ;8;9;10;11;12;13;14;15;16;38;37;36;35;34;33;32;31;30;29;28;27;26;25;24;23;22;21;20;19;
+INFO [2015-06-21 23:20:46,921] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-06-21 23:20:47,062] - [CreateTblDynamic.execute.41   ] - ################ create table MT_201507 like MT_201506
+INFO [2015-06-21 23:20:47,109] - [CreateTblDynamic.execute.54   ] - ################ create table MO_201507 like MO_201506
+INFO [2015-06-21 23:20:47,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Not unique table/alias: 'CDR_2015062X', SQL = create table CDR_2015062X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Not unique table/alias: 'CDR_2015062X'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:47,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015062X like CDR_2015062X
+INFO [2015-06-21 23:20:47,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015060X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:47,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015060X like CDR_2015062X
+INFO [2015-06-21 23:20:47,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015060X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:47,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015060X like CDR_2015062X
+INFO [2015-06-21 23:20:47,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015061X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:47,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015061X like CDR_2015062X
+INFO [2015-06-21 23:20:47,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015061X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:47,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015061X like CDR_2015062X
+INFO [2015-06-21 23:20:47,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Not unique table/alias: 'CDR_2015062X', SQL = create table CDR_2015062X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Not unique table/alias: 'CDR_2015062X'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:47,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015062X like CDR_2015062X
+INFO [2015-06-21 23:20:47,593] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: MainProcess
+INFO [2015-06-21 23:20:47,609] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2015-06-21 23:20:47,609] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2015-06-21 23:20:47,625] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2015-06-21 23:20:47,625] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2015-06-21 23:20:47,625] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2015-06-21 23:20:47,625] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2015-06-21 23:20:47,640] - [JobsMonitor.run.36            ] - Thread-33 is started ...
+INFO [2015-06-21 23:20:47,718] - [QuartzUtils.start.97          ] - Created schedule: com.vas.aps.processor.LoadFirstQues, exps: |0 0 8 * * ?
+INFO [2015-06-21 23:20:48,796] - [MainAps.initProcess.83        ] - Published WS API: http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-06-21 23:20:48,812] - [MainAps.initProcess.86        ] - Published WS API: http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-06-21 23:20:48,812] - [MainAps.initProcess.89        ] - Published WS API: http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-06-21 23:20:49,140] - [MainAps.initProcess.92        ] - Published WS API: http://0.0.0.0:8080/api?
+INFO [2015-06-21 23:20:49,140] - [AbsApplication.run.68         ] - ============= Application started (v1.0.0)==============
+INFO [2015-06-21 23:20:57,187] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Not unique table/alias: 'CDR_2015062X', SQL = create table CDR_2015062X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Not unique table/alias: 'CDR_2015062X'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:57,187] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015062X like CDR_2015062X
+INFO [2015-06-21 23:20:57,203] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015060X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:57,203] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015060X like CDR_2015062X
+INFO [2015-06-21 23:20:57,203] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015060X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:57,203] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015060X like CDR_2015062X
+INFO [2015-06-21 23:20:57,203] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015061X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:57,203] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015061X like CDR_2015062X
+INFO [2015-06-21 23:20:57,203] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Table 'khoahocvui.cdr_2015062x' doesn't exist, SQL = create table CDR_2015061X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'khoahocvui.cdr_2015062x' doesn't exist
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:57,203] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015061X like CDR_2015062X
+INFO [2015-06-21 23:20:57,203] - [BaseDAO.execSql.422           ] - CreateTbl, Exception: Not unique table/alias: 'CDR_2015062X', SQL = create table CDR_2015062X like CDR_2015062X
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Not unique table/alias: 'CDR_2015062X'
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSql(BaseDAO.java:415)
+	at com.vas.aps.processor.CreateTblDynamic.execute(CreateTblDynamic.java:68)
+	at com.ligerdev.appbase.utils.threads.AbsProcessor.run(AbsProcessor.java:38)
+INFO [2015-06-21 23:20:57,203] - [CreateTblDynamic.execute.69   ] - ################ create table CDR_2015062X like CDR_2015062X
+INFO [2015-06-21 23:26:03,734] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: score|register = 500
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: score|reregister = 500
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: score|renew = 300
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mps_listener|subscribe = http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mps_listener|content = http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mps_listener|monthfee = http://0.0.0.0:8888/receiveresult?wsdl
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: publish_ws = http://0.0.0.0:8080/api?
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: max_question = 5
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: subs_update|url = http://0.0.0.0:8888/subs_update
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getList.240     ] - property: first_question|expression = list has size = 1
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: folder_monfee_cdr = /opt/cdr
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|max_tps = 25
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|fake = true
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mt_sender|url = http://0.0.0.0:8888/mtsender
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mt_sender|user = 
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mt_sender|pass = 
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mt_sender|alias = 
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mt_sender|shortcode = 
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.getString.198   ] - property: mt_sender|params = 
+INFO [2015-06-21 23:26:03,750] - [ConfigsReader.loadFile.37     ] - Load config successfully, file = D:\project\khoahocvui\.\config\config.xml
+
+
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue chargeReminderQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue firstQuesQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue mtBroadcastQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue cdrHisQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue mtHisQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue scoreHisQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue mtQueue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay1Queue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay2Queue, size = 0
+INFO [2015-06-21 23:26:03,765] - [QueueMonitor$1.run.45         ] - Thread-5 is started ...
+INFO [2015-06-21 23:26:04,140] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-06-21 23:26:04,203] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:26:04,234] - [QuestionFactory.load.99       ] - Found 29 questions. ids = ;8;9;10;11;12;13;14;15;16;38;37;36;35;34;33;32;31;30;29;28;27;26;25;24;23;22;21;20;19;
+INFO [2015-06-21 23:26:04,234] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-06-21 23:26:04,312] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: MainProcess
+INFO [2015-06-21 23:26:04,343] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2015-06-21 23:26:04,343] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2015-06-21 23:26:04,343] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2015-06-21 23:26:04,343] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2015-06-21 23:26:04,343] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2015-06-21 23:26:04,343] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2015-06-21 23:26:04,343] - [JobsMonitor.run.36            ] - Thread-33 is started ...
+INFO [2015-06-21 23:26:04,359] - [QuartzUtils.start.97          ] - Created schedule: com.vas.aps.processor.LoadFirstQues, exps: |0 0 8 * * ?
+INFO [2015-06-21 23:26:04,656] - [MainAps.initProcess.83        ] - Published WS API: http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-06-21 23:26:04,671] - [MainAps.initProcess.86        ] - Published WS API: http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-06-21 23:26:04,671] - [MainAps.initProcess.89        ] - Published WS API: http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-06-21 23:26:04,812] - [MainAps.initProcess.92        ] - Published WS API: http://0.0.0.0:8080/api?
+INFO [2015-06-21 23:26:04,812] - [AbsApplication.run.68         ] - ============= Application started (v1.0.0)==============
+INFO [2015-06-21 23:26:55,609] - [WsSubscribe.subRequest.45     ] - S24@123456 ######## serviceid = 1, msisdn = 84123456; chargetime = ?; params = 9; mode = REAK; amount = 2000; command = DK; username = 1, password = 1
+INFO [2015-06-21 23:26:55,609] - [WsSubscribe.subRequest.50     ] - S24@123456, mode is NOT real => return success
+INFO [2015-06-21 23:27:59,015] - [WsSubscribe.subRequest.45     ] - S25@123456 ######## serviceid = 1, msisdn = 84123456; chargetime = ?; params = 9; mode = REAL; amount = 2000; command = DK; username = 1, password = 1
+INFO [2015-06-21 23:27:59,218] - [BaseDAO.execSqlGetKeyMySql.387] - S25@123456, exec SQL = INSERT INTO MO_201506(COMMAND, TRANS_ID, MSISDN, CONTENT) VALUES(?, ?, ?, ?)| id 1 is updated
+INFO [2015-06-21 23:27:59,218] - [BaseDAO.insertBeanFields.326  ] - S25@123456, execUpdate MO_201506, id 1 is inserted, bean = [id=0, msisdn=84123456, content=DK, command=unregister, createdTime=null, transId=S25]
+INFO [2015-06-21 23:27:59,218] - [WsSubscribe.subRequest.74     ] - S25@123456, command = unregister, moId = 1
+INFO [2015-06-21 23:27:59,250] - [BaseDAO.getListBySql.574      ] - S25@123456, run SQL = SELECT * FROM SUBSCRIBER WHERE MSISDN = ?| found 0 records
+INFO [2015-06-21 23:27:59,250] - [BaseDAO.getBeanByKey.452      ] - S25@123456, get SUBSCRIBER, key = 84123456, not found!
+INFO [2015-06-21 23:27:59,250] - [UnregisterCmd.execute0.23     ] - S25@123456, subs is not activing
+INFO [2015-06-21 23:27:59,281] - [AbstractCmd.execute.51        ] - S25@123456, execCmd done, resultCode = 0|success, time = 31ms/0s
+INFO [2015-06-21 23:27:59,359] - [SmsClient.sendSms.38          ] - S25@123456, send mt, code = 2.1, content = ### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut).
+INFO [2015-06-21 23:27:59,359] - [SmsClient.sendSms.42          ] - S25@123456, ignore this msg due to it'll be sent by mps
+INFO [2015-06-21 23:27:59,406] - [SmsClient.sendSms.60          ] - S25@123456, time = 47, sendResult = 0
+INFO [2015-06-21 23:27:59,437] - [BaseDAO.execSqlGetKeyMySql.387] - S25@123456, exec SQL = INSERT INTO MT_201506(COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT, CONTENT) VALUES(?, ?, ?, ?, ?, ?)| id 1 is updated
+INFO [2015-06-21 23:27:59,437] - [BaseDAO.insertBeanFields.326  ] - S25@123456, execUpdate MT_201506, id 1 is inserted, bean = [id=0, msisdn=84123456, content=### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut)., moId=1, command=2.1, createdTime=null, transid=S25, sendResult=0]
+INFO [2015-06-21 23:28:04,218] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:30:04,234] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:30:21,796] - [WsSubscribe.subRequest.45     ] - S26@985633470 ######## serviceid = 1, msisdn = 84985633470; chargetime = ?; params = 9; mode = REAL; amount = 2000; command = DK; username = 1, password = 1
+INFO [2015-06-21 23:30:21,828] - [BaseDAO.execSqlGetKeyMySql.387] - S26@985633470, exec SQL = INSERT INTO MO_201506(COMMAND, TRANS_ID, MSISDN, CONTENT) VALUES(?, ?, ?, ?)| id 2 is updated
+INFO [2015-06-21 23:30:21,828] - [BaseDAO.insertBeanFields.326  ] - S26@985633470, execUpdate MO_201506, id 2 is inserted, bean = [id=0, msisdn=84985633470, content=DK, command=unregister, createdTime=null, transId=S26]
+INFO [2015-06-21 23:30:21,828] - [WsSubscribe.subRequest.74     ] - S26@985633470, command = unregister, moId = 2
+INFO [2015-06-21 23:30:21,828] - [BaseDAO.getListBySql.574      ] - S26@985633470, run SQL = SELECT * FROM SUBSCRIBER WHERE MSISDN = ?| found 1 records
+INFO [2015-06-21 23:30:21,828] - [BaseDAO.getBeanByKey.447      ] - S26@985633470, get SUBSCRIBER, key = 84985633470, bean = [msisdn=84985633470, activeTime=2015-05-25 17:00:11.0, deactiveTime=null, activeChannel=SMS, deactiveChannel=null, dayScore=2000, weekScore=2000, monthScore=2000, totalScore=2000, lastModified=2015-05-25 17:00:11.0, status=1, quesReceived=;38;, lastQuesSms=38, expireTime=2015-05-25 23:59:59.0, answeredSms=0, ignoreQuestion=0, answeredWap=0, lastQuesWap=0, answeredWeb=0, lastQuesWeb=0]
+INFO [2015-06-21 23:30:21,875] - [BaseDAO.execSql.417           ] - S26@985633470, exec SQL = UPDATE SUBSCRIBER SET DEACTIVE_TIME = ?, DEACTIVE_CHANNEL = ?, STATUS = ? WHERE MSISDN = ?| 1 rows is updated
+INFO [2015-06-21 23:30:21,875] - [BaseDAO.updateBeanFields.207  ] - S26@985633470, execUpdate SUBSCRIBER, 1 is updated, bean = [msisdn=84985633470, activeTime=2015-05-25 17:00:11.0, deactiveTime=Sun Jun 21 23:30:21 ICT 2015, activeChannel=SMS, deactiveChannel=SYS, dayScore=2000, weekScore=2000, monthScore=2000, totalScore=2000, lastModified=2015-05-25 17:00:11.0, status=3, quesReceived=;38;, lastQuesSms=38, expireTime=2015-05-25 23:59:59.0, answeredSms=0, ignoreQuestion=0, answeredWap=0, lastQuesWap=0, answeredWeb=0, lastQuesWeb=0]
+INFO [2015-06-21 23:30:21,875] - [UnregisterCmd.execute0.50     ] - S26@985633470, unregister success
+INFO [2015-06-21 23:30:21,875] - [SmsClient.sendSms.38          ] - S26@985633470, send mt, code = 2.1, content = ### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut).
+INFO [2015-06-21 23:30:21,875] - [SmsClient.sendSms.42          ] - S26@985633470, ignore this msg due to it'll be sent by mps
+INFO [2015-06-21 23:30:21,875] - [SmsClient.sendSms.60          ] - S26@985633470, time = 0, sendResult = 0
+INFO [2015-06-21 23:30:21,906] - [AbstractCmd.execute.51        ] - S26@985633470, execCmd done, resultCode = 0|success, time = 78ms/0s
+INFO [2015-06-21 23:30:21,953] - [BaseDAO.execSqlGetKeyMySql.387] - S26@985633470, exec SQL = INSERT INTO MT_201506(COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT, CONTENT) VALUES(?, ?, ?, ?, ?, ?)| id 2 is updated
+INFO [2015-06-21 23:30:21,953] - [BaseDAO.insertBeanFields.326  ] - S26@985633470, execUpdate MT_201506, id 2 is inserted, bean = [id=0, msisdn=84985633470, content=### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut)., moId=2, command=2.1, createdTime=null, transid=S26, sendResult=0]
+INFO [2015-06-21 23:30:21,968] - [BaseDAO.execSqlGetKeyMySql.387] - S26@985633470, exec SQL = INSERT INTO CDR_2015062X(REASON, FEE, TRANS_ID, MSISDN) VALUES(?, ?, ?, ?)| id 8 is updated
+INFO [2015-06-21 23:30:21,968] - [BaseDAO.insertBeanFields.326  ] - S26@985633470, execUpdate CDR_2015062X, id 8 is inserted, bean = [id=0, msisdn=84985633470, fee=0, reason=UNREGISTER, createdTime=null, transId=S26]
+INFO [2015-06-21 23:32:04,234] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:33:25,937] - [ConfigsReader.initConfig.75   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.loadFile.35     ] - ================ load config ================
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mo_syntax|help = help;hd
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mo_syntax|answer = 1;2
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mo_syntax|last_question = ch
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mo_syntax|ignore_question = tc
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mo_syntax|accept_question = tt
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mo_syntax|view_score = diem
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: score|register = 500
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: score|reregister = 500
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: score|renew = 300
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: score|answer = 100
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mps_listener|mo = http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mps_listener|subscribe = http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mps_listener|content = http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-06-21 23:33:25,953] - [ConfigsReader.getString.198   ] - property: mps_listener|monthfee = http://0.0.0.0:8888/receiveresult?wsdl
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: publish_ws = http://0.0.0.0:8080/api?
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: max_question = 5
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: subs_update|url = http://0.0.0.0:8888/subs_update
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getList.240     ] - property: first_question|expression = list has size = 1
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: folder_monfee_cdr = /opt/cdr
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|max_tps = 25
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getStringAttr.306] - property(attr): mt_sender|fake = true
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: mt_sender|url = http://0.0.0.0:8888/mtsender
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: mt_sender|user = 
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: mt_sender|pass = 
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: mt_sender|alias = 
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: mt_sender|shortcode = 
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.getString.198   ] - property: mt_sender|params = 
+INFO [2015-06-21 23:33:25,968] - [ConfigsReader.loadFile.37     ] - Load config successfully, file = D:\project\khoahocvui\.\config\config.xml
+
+
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue chargeReminderQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue firstQuesQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue mtBroadcastQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue cdrHisQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue mtHisQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue scoreHisQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue mtQueue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay1Queue, size = 0
+INFO [2015-06-21 23:33:25,968] - [QueueIOUtils.loadQueue.162    ] - Load queue mtDelay2Queue, size = 0
+INFO [2015-06-21 23:33:25,984] - [QueueMonitor$1.run.45         ] - Thread-5 is started ...
+INFO [2015-06-21 23:33:26,406] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-06-21 23:33:26,468] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:33:26,500] - [QuestionFactory.load.99       ] - Found 29 questions. ids = ;8;9;10;11;12;13;14;15;16;38;37;36;35;34;33;32;31;30;29;28;27;26;25;24;23;22;21;20;19;
+INFO [2015-06-21 23:33:26,500] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal
+INFO [2015-06-21 23:33:26,609] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: MainProcess
+INFO [2015-06-21 23:33:26,640] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2015-06-21 23:33:26,640] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2015-06-21 23:33:26,640] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2015-06-21 23:33:26,640] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2015-06-21 23:33:26,640] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2015-06-21 23:33:26,640] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2015-06-21 23:33:26,640] - [JobsMonitor.run.36            ] - Thread-33 is started ...
+INFO [2015-06-21 23:33:26,656] - [QuartzUtils.start.97          ] - Created schedule: com.vas.aps.processor.LoadFirstQues, exps: |0 0 8 * * ?
+INFO [2015-06-21 23:33:26,984] - [MainAps.initProcess.83        ] - Published WS API: http://0.0.0.0:8888/getcontent?wsdl
+INFO [2015-06-21 23:33:27,000] - [MainAps.initProcess.86        ] - Published WS API: http://0.0.0.0:8888/molistener?wsdl
+INFO [2015-06-21 23:33:27,015] - [MainAps.initProcess.89        ] - Published WS API: http://0.0.0.0:8888/subscribe?wsdl
+INFO [2015-06-21 23:33:27,156] - [MainAps.initProcess.92        ] - Published WS API: http://0.0.0.0:8080/api?
+INFO [2015-06-21 23:33:27,156] - [AbsApplication.run.68         ] - ============= Application started (v1.0.0)==============
+INFO [2015-06-21 23:33:44,515] - [WsSubscribe.subRequest.45     ] - S27@985633471 ######## serviceid = 1, msisdn = 84985633471; chargetime = ?; params = 9; mode = REAL; amount = 2000; command = DK; username = 1, password = 1
+INFO [2015-06-21 23:33:44,593] - [BaseDAO.execSqlGetKeyMySql.387] - S27@985633471, exec SQL = INSERT INTO MO_201506(CONTENT, COMMAND, TRANS_ID, MSISDN) VALUES(?, ?, ?, ?)| id 3 is updated
+INFO [2015-06-21 23:33:44,593] - [BaseDAO.insertBeanFields.326  ] - S27@985633471, execUpdate MO_201506, id 3 is inserted, bean = [id=0, msisdn=84985633471, content=DK, command=unregister, createdTime=null, transId=S27]
+INFO [2015-06-21 23:33:44,593] - [WsSubscribe.subRequest.74     ] - S27@985633471, command = unregister, moId = 3
+INFO [2015-06-21 23:33:44,593] - [BaseDAO.getListBySql.574      ] - S27@985633471, run SQL = SELECT * FROM SUBSCRIBER WHERE MSISDN = ?| found 0 records
+INFO [2015-06-21 23:33:44,593] - [BaseDAO.getBeanByKey.452      ] - S27@985633471, get SUBSCRIBER, key = 84985633471, not found!
+INFO [2015-06-21 23:33:44,593] - [UnregisterCmd.execute0.23     ] - S27@985633471, subs is not activing
+INFO [2015-06-21 23:33:44,593] - [AbstractCmd.execute.51        ] - S27@985633471, execCmd done, resultCode = 0|success, time = 0ms/0s
+INFO [2015-06-21 23:33:44,609] - [SmsClient.sendSms.38          ] - S27@985633471, send mt, code = 2.1, content = ### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut).
+INFO [2015-06-21 23:33:44,609] - [SmsClient.sendSms.42          ] - S27@985633471, ignore this msg due to it'll be sent by mps
+INFO [2015-06-21 23:33:44,609] - [SmsClient.sendSms.60          ] - S27@985633471, time = 0, sendResult = 0
+INFO [2015-06-21 23:33:44,640] - [BaseDAO.execSqlGetKeyMySql.387] - S27@985633471, exec SQL = INSERT INTO MT_201506(CONTENT, COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT) VALUES(?, ?, ?, ?, ?, ?)| id 3 is updated
+INFO [2015-06-21 23:33:44,640] - [BaseDAO.insertBeanFields.326  ] - S27@985633471, execUpdate MT_201506, id 3 is inserted, bean = [id=0, msisdn=84985633471, content=### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut)., moId=3, command=2.1, createdTime=null, transid=S27, sendResult=0]
+INFO [2015-06-21 23:34:35,765] - [WsSubscribe.subRequest.45     ] - S28@985633472 ######## serviceid = 1, msisdn = 84985633472; chargetime = ?; params = 9; mode = REAL; amount = 2000; command = DK; username = 1, password = 1
+INFO [2015-06-21 23:34:35,796] - [BaseDAO.execSqlGetKeyMySql.387] - S28@985633472, exec SQL = INSERT INTO MO_201506(CONTENT, COMMAND, TRANS_ID, MSISDN) VALUES(?, ?, ?, ?)| id 4 is updated
+INFO [2015-06-21 23:34:35,796] - [BaseDAO.insertBeanFields.326  ] - S28@985633472, execUpdate MO_201506, id 4 is inserted, bean = [id=0, msisdn=84985633472, content=DK, command=unregister, createdTime=null, transId=S28]
+INFO [2015-06-21 23:34:35,796] - [WsSubscribe.subRequest.74     ] - S28@985633472, command = unregister, moId = 4
+INFO [2015-06-21 23:34:35,796] - [BaseDAO.getListBySql.574      ] - S28@985633472, run SQL = SELECT * FROM SUBSCRIBER WHERE MSISDN = ?| found 0 records
+INFO [2015-06-21 23:34:35,796] - [BaseDAO.getBeanByKey.452      ] - S28@985633472, get SUBSCRIBER, key = 84985633472, not found!
+INFO [2015-06-21 23:34:35,796] - [UnregisterCmd.execute0.23     ] - S28@985633472, subs is not activing
+INFO [2015-06-21 23:34:35,796] - [SmsClient.sendSms.38          ] - S28@985633472, send mt, code = 2.1, content = ### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut).
+INFO [2015-06-21 23:34:35,796] - [SmsClient.sendSms.42          ] - S28@985633472, ignore this msg due to it'll be sent by mps
+INFO [2015-06-21 23:34:35,812] - [SmsClient.sendSms.60          ] - S28@985633472, time = 0, sendResult = 0
+INFO [2015-06-21 23:34:35,812] - [AbstractCmd.execute.51        ] - S28@985633472, execCmd done, resultCode = 0|success, time = 16ms/0s
+INFO [2015-06-21 23:34:35,828] - [BaseDAO.execSqlGetKeyMySql.387] - S28@985633472, exec SQL = INSERT INTO MT_201506(CONTENT, COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT) VALUES(?, ?, ?, ?, ?, ?)| id 4 is updated
+INFO [2015-06-21 23:34:35,828] - [BaseDAO.insertBeanFields.326  ] - S28@985633472, execUpdate MT_201506, id 4 is inserted, bean = [id=0, msisdn=84985633472, content=### Quy khach da huy thanh cong CT Vua Dau Bep Viet Nam. So diem Quy khach da tich luy van duoc bao luu va cong don cho lan dang ky sau. De dang ky lai, soan DK VDB gui 9154 ( 3.000d/ngay). Co hoi so huu giai thuong len den 197 trieu dong dang cho Quy khach. Chi tiet tai http://m.donghanh.mobi hoac LH 19006430 (1.000d/phut)., moId=4, command=2.1, createdTime=null, transid=S28, sendResult=0]
+INFO [2015-06-21 23:35:26,484] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:36:21,250] - [WsSubscribe.subRequest.45     ] - S29@985633472 ######## serviceid = 1, msisdn = 84985633472; chargetime = ?; params = 0; mode = REAL; amount = 2000; command = DK; username = 1, password = 1
+INFO [2015-06-21 23:36:21,328] - [BaseDAO.execSqlGetKeyMySql.387] - S29@985633472, exec SQL = INSERT INTO MO_201506(CONTENT, COMMAND, TRANS_ID, MSISDN) VALUES(?, ?, ?, ?)| id 5 is updated
+INFO [2015-06-21 23:36:21,328] - [BaseDAO.insertBeanFields.326  ] - S29@985633472, execUpdate MO_201506, id 5 is inserted, bean = [id=0, msisdn=84985633472, content=DK, command=register, createdTime=null, transId=S29]
+INFO [2015-06-21 23:36:21,328] - [WsSubscribe.subRequest.74     ] - S29@985633472, command = register, moId = 5
+INFO [2015-06-21 23:36:21,328] - [BaseDAO.getListBySql.574      ] - S29@985633472, run SQL = SELECT * FROM SUBSCRIBER WHERE MSISDN = ?| found 0 records
+INFO [2015-06-21 23:36:21,328] - [BaseDAO.getBeanByKey.452      ] - S29@985633472, get SUBSCRIBER, key = 84985633472, not found!
+INFO [2015-06-21 23:36:25,296] - [RegisterCmd.fistRegister.45   ] - S29@985633472, subs not exist in DB => first register
+INFO [2015-06-21 23:36:54,218] - [SmsClient.sendSms.38          ] - S29@985633472, send mt, code = 1.1.1, content = ### Ban da dang ky thanh cong DV Khoa hoc vui voi 500 diem ban dau. Hay tham gia tra loi cau hoi de co hoi trung thuong HANG TUAN: Giai DAC BIET  01 dong ho Apple watch dang cap tri gia 9.000.000d, Giai nhat 01 dong ho Samsung Galaxy Gear sanh dieu tri gia 6.000.000d. Phi DV 2000d/ngay, gia han hang ngay, ngay dau tien gia 0d voi TB dang ky lan dau. De huy DV soan HUY, de duoc huong dan soan HD gui xxxx, wapsite http://khoahocvui.com.vn. LH 04625
+INFO [2015-06-21 23:36:54,218] - [SmsClient.sendSms.42          ] - S29@985633472, ignore this msg due to it'll be sent by mps
+INFO [2015-06-21 23:36:54,218] - [SmsClient.sendSms.60          ] - S29@985633472, time = 0, sendResult = 0
+INFO [2015-06-21 23:36:54,296] - [RegisterCmd.fistRegister.69   ] - S29@985633472, it's valid time to return question
+INFO [2015-06-21 23:36:54,296] - [QuestionFactory.getQuestion.121] - S29@985633472, find question for msisdn = 84985633472, return quesId = 11
+INFO [2015-06-21 23:36:54,312] - [BaseDAO.execSqlGetKeyMySql.387] - S29@985633472, exec SQL = INSERT INTO MT_201506(CONTENT, COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT) VALUES(?, ?, ?, ?, ?, ?)| id 5 is updated
+INFO [2015-06-21 23:36:54,312] - [BaseDAO.insertBeanFields.326  ] - S29@985633472, execUpdate MT_201506, id 5 is inserted, bean = [id=0, msisdn=84985633472, content=### Ban da dang ky thanh cong DV Khoa hoc vui voi 500 diem ban dau. Hay tham gia tra loi cau hoi de co hoi trung thuong HANG TUAN: Giai DAC BIET  01 dong ho Apple watch dang cap tri gia 9.000.000d, Giai nhat 01 dong ho Samsung Galaxy Gear sanh dieu tri gia 6.000.000d. Phi DV 2000d/ngay, gia han hang ngay, ngay dau tien gia 0d voi TB dang ky lan dau. De huy DV soan HUY, de duoc huong dan soan HD gui xxxx, wapsite http://khoahocvui.com.vn. LH 04625, moId=5, command=1.1.1, createdTime=null, transid=S29, sendResult=0]
+INFO [2015-06-21 23:36:54,343] - [BaseDAO.execSql.417           ] - S29@985633472, exec SQL = INSERT INTO SUBSCRIBER(LAST_MODIFIED, MSISDN, DAY_SCORE, WEEK_SCORE, MONTH_SCORE, TOTAL_SCORE, QUES_RECEIVED, STATUS, LAST_QUES_SMS, LAST_QUES_WAP, LAST_QUES_WEB, ANSWERED_SMS, ANSWERED_WAP, ANSWERED_WEB, IGNORE_QUESTION, EXPIRE_TIME, ACTIVE_TIME, DEACTIVE_TIME, ACTIVE_CHANNEL, DEACTIVE_CHANNEL) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)| 1 rows is updated
+INFO [2015-06-21 23:36:54,343] - [BaseDAO.insertBeanFields.331  ] - S29@985633472, execUpdate SUBSCRIBER, 1 rows is inserted, bean = [msisdn=84985633472, activeTime=Sun Jun 21 23:36:30 ICT 2015, deactiveTime=null, activeChannel=SMS, deactiveChannel=null, dayScore=500, weekScore=500, monthScore=500, totalScore=500, lastModified=Sun Jun 21 23:36:29 ICT 2015, status=1, quesReceived=;11;, lastQuesSms=11, expireTime=Sun Jun 21 23:59:59 ICT 2015, answeredSms=0, ignoreQuestion=0, answeredWap=0, lastQuesWap=0, answeredWeb=0, lastQuesWeb=0]
+INFO [2015-06-21 23:36:54,359] - [AbstractCmd.execute.51        ] - S29@985633472, execCmd done, resultCode = 0|success, time = 33031ms/33s
+INFO [2015-06-21 23:36:54,375] - [BaseDAO.execSqlGetKeyMySql.387] - S29@985633472, exec SQL = INSERT INTO SCORE_HIS(REASON, TRANS_ID, MSISDN, DAY_SCORE, WEEK_SCORE, MONTH_SCORE, TOTAL_SCORE, ADDED_SCORE) VALUES(?, ?, ?, ?, ?, ?, ?, ?)| id 5 is updated
+INFO [2015-06-21 23:36:54,375] - [BaseDAO.insertBeanFields.326  ] - S29@985633472, execUpdate SCORE_HIS, id 5 is inserted, bean = [id=0, msisdn=84985633472, addedScore=500, dayScore=500, weekScore=500, monthScore=500, totalScore=500, reason=REGISTER, createdTime=null, transId=S29]
+INFO [2015-06-21 23:36:54,390] - [BaseDAO.execSqlGetKeyMySql.387] - S29@985633472, exec SQL = INSERT INTO CDR_2015062X(REASON, TRANS_ID, MSISDN, FEE) VALUES(?, ?, ?, ?)| id 9 is updated
+INFO [2015-06-21 23:36:54,390] - [BaseDAO.insertBeanFields.326  ] - S29@985633472, execUpdate CDR_2015062X, id 9 is inserted, bean = [id=0, msisdn=84985633472, fee=0, reason=REGISTER, createdTime=null, transId=S29]
+INFO [2015-06-21 23:37:02,296] - [SmsClient.sendSms.38          ] - S29@985633472, send mt, code = 1.1.2, content = Chao mung Quy khach dang tham gia CT Vua Dau Bep Viet Nam. Quy khach duoc tang 20.000 diem. Hay tra loi cau hoi va tich luy diem de nhan duoc giai thuong co gia tri len toi 197 trieu dong tu CT. LH 19006430 (1.000d/phut) hoac truy cap: http://m.donghanh.mobi. Tran trong.
+INFO [2015-06-21 23:37:02,343] - [SmsClient.sendSms.60          ] - S29@985633472, time = 47, sendResult = 0
+INFO [2015-06-21 23:37:02,500] - [BaseDAO.execSqlGetKeyMySql.387] - S29@985633472, exec SQL = INSERT INTO MT_201506(CONTENT, COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT) VALUES(?, ?, ?, ?, ?, ?)| id 6 is updated
+INFO [2015-06-21 23:37:02,500] - [BaseDAO.insertBeanFields.326  ] - S29@985633472, execUpdate MT_201506, id 6 is inserted, bean = [id=0, msisdn=84985633472, content=Chao mung Quy khach dang tham gia CT Vua Dau Bep Viet Nam. Quy khach duoc tang 20.000 diem. Hay tra loi cau hoi va tich luy diem de nhan duoc giai thuong co gia tri len toi 197 trieu dong tu CT. LH 19006430 (1.000d/phut) hoac truy cap: http://m.donghanh.mobi. Tran trong., moId=5, command=1.1.2, createdTime=null, transid=S29, sendResult=0]
+INFO [2015-06-21 23:37:10,296] - [SmsClient.sendSms.38          ] - S29@985633472, send mt, code = QT-11, content = Tinh gia tri bieu thuc: 4 - 3 = ?, \n1) bang 1\n2) bang 2
+INFO [2015-06-21 23:37:10,343] - [SmsClient.sendSms.60          ] - S29@985633472, time = 47, sendResult = 0
+INFO [2015-06-21 23:37:10,375] - [BaseDAO.execSqlGetKeyMySql.387] - S29@985633472, exec SQL = INSERT INTO MT_201506(CONTENT, COMMAND, TRANS_ID, MSISDN, MO_ID, SEND_RESULT) VALUES(?, ?, ?, ?, ?, ?)| id 7 is updated
+INFO [2015-06-21 23:37:10,375] - [BaseDAO.insertBeanFields.326  ] - S29@985633472, execUpdate MT_201506, id 7 is inserted, bean = [id=0, msisdn=84985633472, content=Tinh gia tri bieu thuc: 4 - 3 = ?, \n1) bang 1\n2) bang 2, moId=5, command=QT-11, createdTime=null, transid=S29, sendResult=0]
+INFO [2015-06-21 23:37:26,500] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:39:26,500] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:41:26,515] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:43:26,515] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:45:26,531] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:47:26,531] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:49:26,546] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:51:26,546] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:53:26,562] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:55:26,562] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:57:26,578] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records
+INFO [2015-06-21 23:59:26,578] - [BaseDAO.getListBySql.574      ] - ReloadMsg, run SQL = select * from MESSAGE where STATUS = 1| found 19 records

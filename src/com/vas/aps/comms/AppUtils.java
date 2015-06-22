@@ -107,6 +107,18 @@ public class AppUtils {
 		}
 	}
 	
+	public static void resetScore(Subscriber subs, int score){
+		try {
+			subs.setDayScore(score);
+			subs.setWeekScore(score);
+			subs.setMonthScore(score);
+			subs.setTotalScore(score);
+			
+		} catch (Exception e) {
+			logger.info("Exception: " + e.getMessage(), e);
+		}
+	}
+	
 	public static boolean isMatch(MoSyntax moSyntax, String content, StringBuilder cmd) {
 		ArrayList<String> list = moSyntax.getListSyntax();
 		cmd.append(moSyntax.getCommand());

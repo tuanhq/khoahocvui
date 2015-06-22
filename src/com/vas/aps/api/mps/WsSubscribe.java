@@ -70,6 +70,7 @@ public class WsSubscribe extends AbsWebservice {
 		mo.setTransId(transid);
 		cmd.setMo(mo);
 		cmd.setAmount(BaseUtils.parseInt(command, 0));
+		//cmd.setAmount(BaseUtils.parseInt(amount, 0));
 		logger.info(transid + ", command = " + mo.getCommand() + ", moId = " + mo.getId());
 		
 		CmdResult cmdResult = cmd.execute();

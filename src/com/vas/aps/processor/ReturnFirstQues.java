@@ -20,6 +20,7 @@ public class ReturnFirstQues extends AbsProcessor {
 	private ReqCountUtils reqCountUtils = ReqCountUtils.getInstance("ReturnFirstQues", "F");
 	private SendTraffic sendTraffic = SendTraffic.getInstance("ReturnFirstQues");
 	
+	
 	@Override
 	public void execute() {
 		Subscriber subs = (Subscriber) mainApp.getFirstQuesQueue().removeFirst();

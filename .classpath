@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="org/thq/api/|org/thq/business/|org/thq/database/|org/thq/logic/|org/thq/schedulerTask/|org/thq/utils/" kind="src" path="src"/>
 	<classpathentry kind="src" path="src-lib"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/bcprov-jdk15-136.jar"/>

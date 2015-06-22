@@ -1,0 +1,1 @@
+INFO [2015-05-21 01:06:16,828] - [AbsBaseDAO.<init>.32          ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBPoolNormal

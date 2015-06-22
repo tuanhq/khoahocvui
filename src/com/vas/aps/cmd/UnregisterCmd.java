@@ -4,6 +4,8 @@ import java.util.Date;
 
 import com.vas.aps.api.CmdResult;
 import com.vas.aps.comms.AppConstants;
+import com.vas.aps.comms.AppUtils;
+import com.vas.aps.comms.XmlConfigs;
 import com.vas.aps.db.orm.CdrHis;
 import com.vas.aps.db.orm.MtHis;
 import com.vas.aps.db.orm.Subscriber;
@@ -43,7 +45,8 @@ public class UnregisterCmd extends AbstractCmd {
 		subs.setDeactiveTime(new Date());
 		subs.setStatus(AppConstants.SUBS_STATUS_DEACTIVE);
 		subs.setDeactiveChannel(getChannel());
-		baseDAO.updateBeanFields(mo.getTransId(), subs, true, "DEACTIVE_TIME", "STATUS", "DEACTIVE_CHANNEL");
+		AppUtils.resetScore(subs, 0);
+		baseDAO.updateBeanFields(mo.getTransId(), subs, true, "DEACTIVE_TIME", "STATUS", "DEACTIVE_CHANNEL","DAY_SCORE","WEEK_SCORE","MONTH_SCORE","TOTAL_SCORE");
 
 		MtHis mt = MessageFactory.getMessage(mo, AppConstants.MT_UNREGISTER, subs);
 		mainApp.getMtQueue().addLast(mt);
