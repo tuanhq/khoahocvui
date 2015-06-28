@@ -25,8 +25,7 @@ public class MessageFactory {
 	private static MainAps mainApp = MainAps.getInstance();
 	private static BaseDAO baseDAO = BaseDAO.getInstance(BaseDAO.POOL_NAME_MAIN);
 	private static Random random = new Random();
-	public static void initStatic(){};
-	
+	public static void initStatic(){};	
 	static {
 		new AbsTimer(1000 * 60 * 2) {
 			@Override

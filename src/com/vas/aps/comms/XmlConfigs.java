@@ -37,6 +37,7 @@ public class XmlConfigs extends ConfigsReader {
 		public static MoSyntax IGNORE_QUESTION;
 		public static MoSyntax ACCEPT_QUESTION;
 		public static MoSyntax VIEW_SCORE;
+		public static MoSyntax TOP_SCORE;
 	}
 
 	public static class Score {

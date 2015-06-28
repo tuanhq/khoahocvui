@@ -38,10 +38,16 @@ public class AppConstants {
 	public static String MT_ACCEPT_RECEIVE_QUESTION = "5.5";
 	public static String MT_SYSTEM_ERROR = "5.9";
 	public static String MT_VIEW_SCORE = "5.6";
+	//mt buycontent
+	public static String MT_X2_WHEN_ACTIVE_X2 = "5.11";
+	public static String MT_X2_WHEN_SUCCESS = "5.12";
+	public static String MT_MUA_WHEN_SUCCESS = "5.13";
+	
 	// mt answer
 	public static String MT_ANSWER_WHEN_NOT_RECEIVED_QUESTION = "4.4";
 	public static String MT_ANSWER_LAST_QUESTION = "4.3";
 	public static String MT_ANSWER_CORRECT = "4.1";
+	public static String MT_ANSWER_CORRECTX2 = "4.12";
 	public static String MT_ANSWER_WRONG = "4.2";
 	// mt register
 	public static String MT_REGISTER_FIRST_MT_1 = "1.1.1";
@@ -60,7 +66,9 @@ public class AppConstants {
 	public static String CDR_REASON_RE_REGISTER = "RE-REGISTER";
 	public static String CDR_REASON_RENEW = "RENEW";
 	public static String CDR_REASON_ANSWER = "ANSWER";
-	public static String CDR_REASON_BUY_QUESTION = "BUY-QUESTION";
+	public static String CDR_REASON_BUY_QUESTION_MUA = "MUA";
+	public static String CDR_REASON_BUY_QUESTION_DOI = "DOI";
+	public static String CDR_REASON_BUY_QUESTION_X2 = "X2";
 	
 	// parameter to replace
 	public static String PARAMS_DAY_SCORE = "[DAY_SCORE]";
@@ -68,4 +76,5 @@ public class AppConstants {
 	public static String PARAMS_MONTH_SCORE = "[MONTH_SCORE]";
 	public static String PARAMS_TOTAL_SCORE = "[TOTAL_SCORE]";
 	public static String PARAMS_CURRENT_MONTH = "[CUR_MONTH]";
+	
 }

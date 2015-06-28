@@ -43,6 +43,7 @@
 		<ignore_question>tc</ignore_question>
 		<accept_question>tt</accept_question>
 		<view_score>diem</view_score>
+		<top_score>top</top_score>
 	</mo_syntax>
 	
 </configuration>

@@ -55,15 +55,15 @@ public class ResetDaily extends AbsProcessor {
 				totalInsert += baseDAO.insertBean("InsertWinner", winner);
 			}
 		}
-		if(cal.get(Calendar.DATE) == 1){
-			String sql = "select * from SUBSCRIBER where STATUS = " + AppConstants.SUBS_STATUS_ACTIVE + " ORDER BY MONTH_SCORE desc";
-			ArrayList<Subscriber> listTop = baseDAO.getListBySql("GetTopMonthly", Subscriber.class, sql, 0, 5);
-			for(Subscriber subs : listTop){
-				Winner winner = new Winner(0, subs.getMsisdn(), subs.getDayScore(), subs.getWeekScore(), subs.getMonthScore(), 
-						subs.getTotalScore(), "MONTHLY", today, null);
-				totalInsert += baseDAO.insertBean("InsertWinner", winner);
-			}
-		}
+//		if(cal.get(Calendar.DATE) == 1){
+//			String sql = "select * from SUBSCRIBER where STATUS = " + AppConstants.SUBS_STATUS_ACTIVE + " ORDER BY MONTH_SCORE desc";
+//			ArrayList<Subscriber> listTop = baseDAO.getListBySql("GetTopMonthly", Subscriber.class, sql, 0, 5);
+//			for(Subscriber subs : listTop){
+//				Winner winner = new Winner(0, subs.getMsisdn(), subs.getDayScore(), subs.getWeekScore(), subs.getMonthScore(), 
+//						subs.getTotalScore(), "MONTHLY", today, null);
+//				totalInsert += baseDAO.insertBean("InsertWinner", winner);
+//			}
+//		}
 		return totalInsert;
 	}
 

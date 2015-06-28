@@ -15,6 +15,7 @@ import com.vas.aps.cmd.AnswerCmd;
 import com.vas.aps.cmd.HelpCmd;
 import com.vas.aps.cmd.IgnoreQuestionCmd;
 import com.vas.aps.cmd.LastQuestionCmd;
+import com.vas.aps.cmd.TopScoreCmd;
 import com.vas.aps.cmd.ViewScoreCmd;
 import com.vas.aps.cmd.WrongSyntaxCmd;
 import com.vas.aps.comms.AppUtils;
@@ -69,7 +70,11 @@ public class WsMoListener extends AbsWebservice {
 		} else if(AppUtils.isMatch(XmlConfigs.Syntax.VIEW_SCORE, content, cmdValue)){
 			mo = new MoHis(0, msisdn, content, cmdValue.toString(), null, transid.split("@")[0]);
 			cmd = new ViewScoreCmd();
+		}else if(AppUtils.isMatch(XmlConfigs.Syntax.TOP_SCORE, content, cmdValue)){
+			mo = new MoHis(0, msisdn, content, cmdValue.toString(), null, transid.split("@")[0]);
+			cmd = new TopScoreCmd();
 		}
+		
 		else {
 			mo = new MoHis(0, msisdn, content, "wrong_syntax", null, transid.split("@")[0]);
 			cmd = new WrongSyntaxCmd();
