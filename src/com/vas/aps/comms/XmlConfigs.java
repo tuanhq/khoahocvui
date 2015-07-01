@@ -45,6 +45,10 @@ public class XmlConfigs extends ConfigsReader {
 		public static int REREGISTER;
 		public static int RENEW;
 		public static int ANSWER;
+		public static int BOHAI;
+		public static int BOBA;
+		public static int NHANDOI;
+		public static int SOLUONG;
 	}
 	
 	public static class SubsUpdate {

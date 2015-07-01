@@ -14,6 +14,10 @@
 		<reregister>500</reregister>
 		<renew>300</renew>
 		<answer>100</answer>
+		<bohai>20</bohai>
+		<boba>100</boba>
+		<nhandoi>100</nhandoi>
+		<soluong>5</soluong>
 	</score>
 
 	<mps_listener>
@@ -45,5 +49,6 @@
 		<view_score>diem</view_score>
 		<top_score>top</top_score>
 	</mo_syntax>
+	
 	
 </configuration>

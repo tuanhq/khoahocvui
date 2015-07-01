@@ -48,6 +48,9 @@ public class AppConstants {
 	public static String MT_ANSWER_LAST_QUESTION = "4.3";
 	public static String MT_ANSWER_CORRECT = "4.1";
 	public static String MT_ANSWER_CORRECTX2 = "4.12";
+	public static String MT_ANSWER_CORRECTB2 = "4.13";
+	public static String MT_ANSWER_CORRECTB3 = "4.14";
+	public static String MT_ANSWER_CORRECTND = "4.15";
 	public static String MT_ANSWER_WRONG = "4.2";
 	// mt register
 	public static String MT_REGISTER_FIRST_MT_1 = "1.1.1";

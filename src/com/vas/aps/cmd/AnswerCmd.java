@@ -1,6 +1,7 @@
 package com.vas.aps.cmd;
 
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import com.ligerdev.appbase.utils.BaseUtils;
 import com.vas.aps.api.CmdResult;
@@ -57,25 +58,64 @@ public class AnswerCmd extends AbstractCmd {
 			return resultCmd;
 		}
 		MtHis confirmAnswer = null;
+		MtHis confirmAnswerX2 = null;
 		int scoreBonus = 0;
-		
+		int numberAnswer = mainApp.getCount().addAndGet(1);
 		if (this.mo.getContent().equalsIgnoreCase(lastQuestion.getResult())) {
 			logger.info( mo.getTransId() + ", answer for question "  + lastQuestion.getId() + " is " + this.mo.getContent() + " => correct answer");
-			
 			scoreBonus = XmlConfigs.Score.ANSWER;
 			if(subActive!=null && subActive.getIsEnable()==1){
 				scoreBonus = XmlConfigs.Score.ANSWER*2;
 			}
-			AppUtils.addScore(subs, scoreBonus);
 			
+			
+			int thuong = numberAnswer/XmlConfigs.Score.SOLUONG;
+			int sodu = thuong%4;
+			int thuong2 = thuong/4;
+			
+			int plusScore;
+			String boChu;
+			if(sodu ==1){
+				plusScore = 20;
+				boChu = "KHOA HOC";
+			}else if(sodu==2){
+				plusScore = 20;
+				boChu = "HOC VUI";
+			}else if(sodu==3){
+				plusScore = 20;
+				boChu = "MAY MAN";
+			}else if(sodu == 0 && thuong2%2==0) {
+				plusScore = 100;
+				boChu = "KHOA HOC VUI";
+			}else{
+				plusScore = 100;
+				boChu = "NHAN DOI";
+			}
+			scoreBonus= scoreBonus + plusScore;
+			AppUtils.addScore(subs, scoreBonus);
 			String temp = lastQuestion.getConfirmCorrectMt();
 			if (BaseUtils.isNotBlank(temp)) {
 				confirmAnswer = new MtHis(mo.getTransId(), 0, mo.getMsisdn(), temp, mo.getId(), "CR-" + lastQuestion.getId(), null, null);
 			} else {
-				if(scoreBonus==XmlConfigs.Score.ANSWER*2){
-					confirmAnswer = MessageFactory.getMessage(mo, AppConstants.MT_ANSWER_CORRECTX2, subs);
+				
+				String mtcontent ="";
+				
+				if(scoreBonus==XmlConfigs.Score.ANSWER){
+					mtcontent = AppConstants.MT_ANSWER_CORRECT;
 				}else{
-				confirmAnswer = MessageFactory.getMessage(mo, AppConstants.MT_ANSWER_CORRECT, subs);
+					if(sodu==1||sodu==2||sodu==3){
+						mtcontent =AppConstants.MT_ANSWER_CORRECTB2.replace("[xxx xxx]", boChu);
+					}else if (sodu == 0 && thuong2%2==0){
+						mtcontent = AppConstants.MT_ANSWER_CORRECTB3;
+					}else{
+						mtcontent = AppConstants.MT_ANSWER_CORRECTND;
+					}
+				}
+				
+				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);
+				if(subActive!=null && subActive.getIsEnable()==1){
+					confirmAnswerX2 = MessageFactory.getMessage(mo, AppConstants.MT_ANSWER_CORRECTX2, subs);
+					
 				}
 				
 				
@@ -95,7 +135,11 @@ public class AnswerCmd extends AbstractCmd {
 			subActive.setDateModified(new Date());
 			baseDAO.updateBean(mo.getTransId(), subActive);
 		}
+		
 		mainApp.getMtQueue().addLast(confirmAnswer);
+		if(confirmAnswerX2!=null){
+			mainApp.getMtDelay1Queue().addLast(confirmAnswerX2);
+		}
 		resultCmd.addMt(confirmAnswer);
 		
 		if (answerTh >= XmlConfigs.MAX_QUESTION_PER_CHANNEL + count) {

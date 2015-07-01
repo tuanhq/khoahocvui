@@ -1,5 +1,7 @@
 package com.vas.aps;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 import javax.xml.ws.Endpoint;
 
 import com.ligerdev.appbase.utils.http.HttpServerUtils;
@@ -41,7 +43,7 @@ public class MainAps extends AbsApplication {
 	private MsgQueueITF mtQueue = QueueIOUtils.loadQueue(true, true, new MsgQueue("mtQueue"));
 	private MsgQueueITF mtDelay1Queue = QueueIOUtils.loadQueue(true, true, new MsgDelayQueue("mtDelay1Queue", 200000, 8000));
 	private MsgQueueITF mtDelay2Queue = QueueIOUtils.loadQueue(true, true, new MsgDelayQueue("mtDelay2Queue", 200000, 16000));
-	
+	private AtomicInteger count = new AtomicInteger(0);
 	private MainAps(Class<? extends ConfigsReader> clazzConfig) {
 		super(clazzConfig);
 		AbsApplication.VERSION = "1.0.0";
@@ -170,5 +172,19 @@ public class MainAps extends AbsApplication {
 
 	public void setChargeReminderQueue(MsgQueueITF chargeReminderQueue) {
 		this.chargeReminderQueue = chargeReminderQueue;
+	}
+
+	/**
+	 * @return the count
+	 */
+	public AtomicInteger getCount() {
+		return count;
+	}
+
+	/**
+	 * @param count the count to set
+	 */
+	public void setCount(AtomicInteger count) {
+		this.count = count;
 	}
 }
