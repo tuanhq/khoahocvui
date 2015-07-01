@@ -25,7 +25,7 @@ public class TopScoreCmd extends AbstractCmd {
 		}
 		
 		String content ="Danh sach top 10 thue bao co so diem cao nhat:";		
-		String sql = "SELECT * FROM `subscriber` order by WEEK_SCORE desc,LAST_MODIFIED asc limit 10";  // có thể thêm điều kiện where thoải mái
+		String sql = "SELECT * FROM `subscriber` order by MONTH_SCORE desc,LAST_MODIFIED asc limit 10";  // có thể thêm điều kiện where thoải mái
 		ArrayList<Subscriber> list = baseDAO.getListBySql(mo.getTransId(), Subscriber.class, sql, 0, 10);
 		for(int i=0;i<list.size();i++){
 			Subscriber sub = list.get(i);			
