@@ -6,7 +6,7 @@
     <folder_monfee_cdr>/opt/cdr</folder_monfee_cdr>
     
     <first_question>
-        <expression>0 0 8 * * ?</expression>
+        <expression>0 30 7 * * ?</expression>
     </first_question>
     
 	<score>

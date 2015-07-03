@@ -57,8 +57,7 @@ public class AnswerCmd extends AbstractCmd {
 			resultCmd.addMt(mt);
 			return resultCmd;
 		}
-		MtHis confirmAnswer = null;
-		MtHis confirmAnswerX2 = null;
+		MtHis confirmAnswer = null;		
 		int scoreBonus = 0;
 		int numberAnswer = mainApp.getCount().addAndGet(1);
 		if (this.mo.getContent().equalsIgnoreCase(lastQuestion.getResult())) {
@@ -104,21 +103,16 @@ public class AnswerCmd extends AbstractCmd {
 					mtcontent = AppConstants.MT_ANSWER_CORRECT;
 				}else{
 					if(sodu==1||sodu==2||sodu==3){
-						mtcontent =AppConstants.MT_ANSWER_CORRECTB2.replace("[xxx xxx]", boChu);
+						mtcontent =AppConstants.MT_ANSWER_CORRECTB2.replace("[xxx xxx]", boChu).replace("[SCORE_PLUS]", " " +scoreBonus+ " ");
 					}else if (sodu == 0 && thuong2%2==0){
-						mtcontent = AppConstants.MT_ANSWER_CORRECTB3;
+						mtcontent = AppConstants.MT_ANSWER_CORRECTB3.replace("[SCORE_PLUS]", " " +scoreBonus+ " ");;
 					}else{
-						mtcontent = AppConstants.MT_ANSWER_CORRECTND;
+						mtcontent = AppConstants.MT_ANSWER_CORRECTND.replace("[SCORE_PLUS]", " " +scoreBonus+ " ");;
 					}
 				}
 				
-				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);
-				if(subActive!=null && subActive.getIsEnable()==1){
-					confirmAnswerX2 = MessageFactory.getMessage(mo, AppConstants.MT_ANSWER_CORRECTX2, subs);
-					
-				}
-				
-				
+				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);			
+								
 			}
 		} else {
 			logger.info( mo.getTransId() + ", answer for question "  + lastQuestion.getId() + " is " + this.mo.getContent() + " => wrong answer");
@@ -137,9 +131,7 @@ public class AnswerCmd extends AbstractCmd {
 		}
 		
 		mainApp.getMtQueue().addLast(confirmAnswer);
-		if(confirmAnswerX2!=null){
-			mainApp.getMtDelay1Queue().addLast(confirmAnswerX2);
-		}
+		
 		resultCmd.addMt(confirmAnswer);
 		
 		if (answerTh >= XmlConfigs.MAX_QUESTION_PER_CHANNEL + count) {

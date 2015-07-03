@@ -89,7 +89,7 @@ public class AppUtils {
 		}
 		SimpleDateFormat df = new SimpleDateFormat("HH:mm");
 		String now = df.format(new Date());
-		if (now.compareTo("08:00") >= 0 && now.compareTo("24:00") <= 0) {
+		if (now.compareTo("07:30") >= 0 && now.compareTo("24:00") <= 0) {
 			return true;
 		}
 		return false;

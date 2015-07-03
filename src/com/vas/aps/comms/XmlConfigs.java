@@ -64,11 +64,18 @@ public class XmlConfigs extends ConfigsReader {
 		Syntax.IGNORE_QUESTION = getMoSyntax("ignore_question");
 		Syntax.ACCEPT_QUESTION = getMoSyntax("accept_question");
 		Syntax.VIEW_SCORE = getMoSyntax("view_score");
+		Syntax.TOP_SCORE = getMoSyntax("top_score");
 		
 		Score.REGISTER = getInt("score|register");
 		Score.REREGISTER = getInt("score|reregister");
 		Score.RENEW = getInt("score|renew");
 		Score.ANSWER = getInt("score|answer");
+		Score.BOHAI = getInt("score|bohai");
+		Score.BOBA = getInt("score|boba");
+		Score.NHANDOI = getInt("score|nhandoi");
+		Score.SOLUONG = getInt("score|soluong");
+		
+		
 		
 		MpsListener.MO = getString("mps_listener|mo");
 		MpsListener.SUBSCRIBE = getString("mps_listener|subscribe");
