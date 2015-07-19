@@ -3,10 +3,7 @@
  */
 package com.vas.aps.cmd;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.eclipse.jdt.internal.antadapter.AntAdapterMessages;
 
 import com.vas.aps.api.CmdResult;
 import com.vas.aps.comms.AppConstants;
@@ -15,7 +12,6 @@ import com.vas.aps.comms.XmlConfigs;
 import com.vas.aps.db.orm.CdrHis;
 import com.vas.aps.db.orm.MtHis;
 import com.vas.aps.db.orm.Question;
-import com.vas.aps.db.orm.SubActiveDuplicate;
 import com.vas.aps.db.orm.SubBuyQuestion;
 import com.vas.aps.db.orm.Subscriber;
 import com.vas.aps.tablecache.MessageFactory;
@@ -63,8 +59,8 @@ public class BuyQuestionCmd extends AbstractCmd  {
 					// MtHis mt1 = new MtHis(mo.getTransId(), 0, mo.getMsisdn(), content,
 					// mo.getId(), "QT-" + question.getId(), null, null);
 					MtHis mt1 = new MtHis(mo.getTransId(), 0, mo.getMsisdn(), content, mo.getId(), "QT-" + newQuestion.getId(), null, null);
-					mainApp.getMtDelay1Queue().addLast(mt);
-					resultCmd.addMt(mt);
+					mainApp.getMtDelay1Queue().addLast(mt1);
+					resultCmd.addMt(mt1);
 				}
 			}
 			CdrHis cdrHis = new CdrHis(0, mo.getMsisdn(), 0, AppConstants.CDR_REASON_BUY_QUESTION_MUA, null, mo.getTransId());

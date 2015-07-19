@@ -79,5 +79,6 @@ public class AppConstants {
 	public static String PARAMS_MONTH_SCORE = "[MONTH_SCORE]";
 	public static String PARAMS_TOTAL_SCORE = "[TOTAL_SCORE]";
 	public static String PARAMS_CURRENT_MONTH = "[CUR_MONTH]";
+	public static String PARAMS_CURRENT_TIME = "{hh:mm:ss}";
 	
 }

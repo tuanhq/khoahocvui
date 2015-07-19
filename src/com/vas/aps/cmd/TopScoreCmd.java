@@ -24,18 +24,19 @@ public class TopScoreCmd extends AbstractCmd {
 			return resultCmd;
 		}
 		
-		String content ="Danh sach top 10 thue bao co so diem cao nhat:";		
+		String content ="Danh sach top 10 thue bao co so diem cao nhat: ";		
 		String sql = "SELECT * FROM `subscriber` order by MONTH_SCORE desc,LAST_MODIFIED asc limit 10";  // có thể thêm điều kiện where thoải mái
 		ArrayList<Subscriber> list = baseDAO.getListBySql(mo.getTransId(), Subscriber.class, sql, 0, 10);
 		for(int i=0;i<list.size();i++){
-			Subscriber sub = list.get(i);			
-			content+= sub+":" +sub.getWeekScore();
+			Subscriber sub = list.get(i);
+			String msisdn = sub.getMsisdn().substring(0, sub.getMsisdn().length()-3);
+			content+= msisdn +"xxx :" +sub.getMonthScore();
 			if(i<list.size()-1){
 				content+=",";
 			}
 			
 		}
-		MtHis mt = MessageFactory.getMessage(mo, content, subs);
+		MtHis mt = new MtHis(mo.getTransId(), 0, subs.getMsisdn(), content, mo.getId(), "TOP_SCORE", null, null);
 		mainApp.getMtQueue().addLast(mt);		
 		resultCmd.addMt(mt);
 		return resultCmd;

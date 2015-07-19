@@ -67,52 +67,52 @@ public class AnswerCmd extends AbstractCmd {
 				scoreBonus = XmlConfigs.Score.ANSWER*2;
 			}
 			
-			
-			int thuong = numberAnswer/XmlConfigs.Score.SOLUONG;
-			int sodu = thuong%4;
-			int thuong2 = thuong/4;
-			
-			int plusScore;
-			String boChu;
-			if(sodu ==1){
-				plusScore = 20;
-				boChu = "KHOA HOC";
-			}else if(sodu==2){
-				plusScore = 20;
-				boChu = "HOC VUI";
-			}else if(sodu==3){
-				plusScore = 20;
-				boChu = "MAY MAN";
-			}else if(sodu == 0 && thuong2%2==0) {
-				plusScore = 100;
-				boChu = "KHOA HOC VUI";
-			}else{
-				plusScore = 100;
-				boChu = "NHAN DOI";
+			int thuong = numberAnswer / XmlConfigs.Score.SOLUONG;
+			int sodu = numberAnswer%XmlConfigs.Score.SOLUONG;
+			int sodu2 = thuong % 4;
+			int thuong2 = thuong / 4;
+
+			int plusScore = 0;
+			String boChu = "";
+			if (thuong > 0 && sodu ==0 ){
+				if (sodu2 == 1) {
+					plusScore = 20;
+					boChu = "KHOA HOC";
+				} else if (sodu2 == 2) {
+					plusScore = 20;
+					boChu = "HOC VUI";
+				} else if (sodu2 == 3) {
+					plusScore = 20;
+					boChu = "MAY MAN";
+				} else if (sodu2 == 0 && thuong2 % 2 == 0) {
+					plusScore = 100;
+					boChu = "KHOA HOC VUI";
+				} else if (sodu2 == 0 && thuong2 % 2 == 1){
+					plusScore = 100;
+					boChu = "NHAN DOI";
+				}
 			}
-			scoreBonus= scoreBonus + plusScore;
 			AppUtils.addScore(subs, scoreBonus);
 			String temp = lastQuestion.getConfirmCorrectMt();
 			if (BaseUtils.isNotBlank(temp)) {
 				confirmAnswer = new MtHis(mo.getTransId(), 0, mo.getMsisdn(), temp, mo.getId(), "CR-" + lastQuestion.getId(), null, null);
 			} else {
-				
-				String mtcontent ="";
-				
-				if(scoreBonus==XmlConfigs.Score.ANSWER){
-					mtcontent = AppConstants.MT_ANSWER_CORRECT;
-				}else{
-					if(sodu==1||sodu==2||sodu==3){
-						mtcontent =AppConstants.MT_ANSWER_CORRECTB2.replace("[xxx xxx]", boChu).replace("[SCORE_PLUS]", " " +scoreBonus+ " ");
-					}else if (sodu == 0 && thuong2%2==0){
-						mtcontent = AppConstants.MT_ANSWER_CORRECTB3.replace("[SCORE_PLUS]", " " +scoreBonus+ " ");;
-					}else{
-						mtcontent = AppConstants.MT_ANSWER_CORRECTND.replace("[SCORE_PLUS]", " " +scoreBonus+ " ");;
+				String mtcontent = "";
+				if(boChu!=""){
+					if (sodu2 == 1 || sodu2 == 2 || sodu2 == 3) {
+						mtcontent = AppConstants.MT_ANSWER_CORRECTB2.replace("[xxx xxx]", boChu).replace("[SCORE_PLUS]", " " + plusScore + " ");
+					} else if (sodu2 == 0 && thuong2 % 2 == 0) {
+						mtcontent = AppConstants.MT_ANSWER_CORRECTB3.replace("[SCORE_PLUS]", " " + plusScore + " ");
+						
+					}else if (sodu2 == 0 && thuong2 % 2 == 1)  {
+						mtcontent = AppConstants.MT_ANSWER_CORRECTND.replace("[SCORE_PLUS]", " " + plusScore + " ");						
 					}
+				}else{
+					mtcontent = AppConstants.MT_ANSWER_CORRECT;
 				}
-				
-				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);			
-								
+				mtcontent = mtcontent.replace("[SCORE_ADD]", " " + scoreBonus + " ");
+				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);
+
 			}
 		} else {
 			logger.info( mo.getTransId() + ", answer for question "  + lastQuestion.getId() + " is " + this.mo.getContent() + " => wrong answer");

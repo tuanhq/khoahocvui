@@ -58,6 +58,7 @@ public class SmsClient {
 		
 		// logger.info(transid + ", mtCode = " + code + ", xmlResponse = " + xmlResponse);
 		logger.info(transid + ", time = " + (l2 - l1) + ", sendResult = " + sendResult);
+		System.err.println(transid + ", time = " + (l2 - l1) + ", sendResult = " + sendResult + "-content:" + content);
 		
 		return sendResult;
 	}

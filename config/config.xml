@@ -3,7 +3,7 @@
     
     <max_question>5</max_question>
     <publish_ws>http://0.0.0.0:8080/api?</publish_ws>
-    <folder_monfee_cdr>/opt/cdr</folder_monfee_cdr>
+    <folder_monfee_cdr>D:\\project\\khoahocvui\\log\\cdr_monthfee</folder_monfee_cdr>
     
     <first_question>
         <expression>0 30 7 * * ?</expression>

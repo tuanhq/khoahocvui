@@ -1,0 +1,2 @@
+2015/07/14 23:39:41|serviceid=1|msisdn=84985633482|chargetime=8420150714211600|params=0|mode=REAL|amount=2000|resp=0|transid=R15@985633482
+2015/07/14 23:39:43|serviceid=1|msisdn=84985633482|chargetime=8420150714211600|params=0|mode=REAL|amount=2000|resp=0|transid=R16@985633482

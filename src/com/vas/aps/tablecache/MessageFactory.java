@@ -1,7 +1,9 @@
 package com.vas.aps.tablecache;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -69,6 +71,7 @@ public class MessageFactory {
 				content = content.replace(AppConstants.PARAMS_WEEK_SCORE, String.valueOf(subs.getWeekScore()));
 				content = content.replace(AppConstants.PARAMS_MONTH_SCORE, String.valueOf(subs.getMonthScore()));
 				content = content.replace(AppConstants.PARAMS_TOTAL_SCORE, String.valueOf(subs.getTotalScore()));
+				content = content.replace(AppConstants.PARAMS_CURRENT_TIME, new SimpleDateFormat("HH:mm:ss").format(new Date()));
 				msg.setContent(content);
 			}
 			if(content.contains(AppConstants.PARAMS_CURRENT_MONTH)){
