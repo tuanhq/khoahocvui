@@ -119,6 +119,27 @@ public class QuestionFactory {
 		}
 		AppUtils.setLastQuesId(subs, channel, q.getId());
 		logger.info(transid + ", find question for msisdn = " + subs.getMsisdn() + ", return quesId = " + q.getId());
+		//FIX PREFIX and SUBFIX question
+		q.setContent("Hay tra loi cau hoi:" + q.getContent()+". De tra loi, soan 1 hoac 2 gui 5191. De nhan doi so diem cau tra loi, soan X2 gửi 5191.");
+		return q;
+	}
+	
+	public static Question getLastQuestion(String transid, Subscriber subs, String channel) {
+		Question q = getQuestion(subs.getQuesReceived());
+		if (BaseUtils.isBlank(subs.getQuesReceived())) {
+			subs.setQuesReceived(";");
+
+		} else if (subs.getQuesReceived().length() >= 4500) {
+			logger.info(transid + ", Question received is too long => reset it now, msisdn = " 
+					+ subs.getMsisdn() + ", questionReceiveds = " + subs.getQuesReceived());
+			subs.setQuesReceived(";");
+		}
+		if (!subs.getQuesReceived().contains(";" + q.getId() + ";")) {
+			subs.setQuesReceived(subs.getQuesReceived() + q.getId() + ";");
+		}
+		AppUtils.setLastQuesId(subs, channel, q.getId());
+		logger.info(transid + ", find question for msisdn = " + subs.getMsisdn() + ", return quesId = " + q.getId());
+		q.setContent(q.getContent()+ ". De tra loi, soan 1 hoac 2 gui 5191. Tang co hoi chien thang, hay soan MUA gui 5191 (2.000d/5 cau) de mua them goi cau hoi. Chuc ban may man.");
 		return q;
 	}
 

@@ -47,7 +47,7 @@ public class AppConstants {
 	public static String MT_ANSWER_WHEN_NOT_RECEIVED_QUESTION = "4.4";
 	public static String MT_ANSWER_LAST_QUESTION = "4.3";
 	public static String MT_ANSWER_CORRECT = "4.1";
-	public static String MT_ANSWER_CORRECTX2 = "4.12";
+	public static String MT_X2_WHEN_ACTIVE = "4.12";
 	public static String MT_ANSWER_CORRECTB2 = "4.13";
 	public static String MT_ANSWER_CORRECTB3 = "4.14";
 	public static String MT_ANSWER_CORRECTND = "4.15";
@@ -80,5 +80,6 @@ public class AppConstants {
 	public static String PARAMS_TOTAL_SCORE = "[TOTAL_SCORE]";
 	public static String PARAMS_CURRENT_MONTH = "[CUR_MONTH]";
 	public static String PARAMS_CURRENT_TIME = "{hh:mm:ss}";
+	public static String PARAMS_CURRENT_DATE = "{dd/mm/yyy}";
 	
 }

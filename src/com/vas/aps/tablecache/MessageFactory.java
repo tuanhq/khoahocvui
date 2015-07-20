@@ -72,6 +72,7 @@ public class MessageFactory {
 				content = content.replace(AppConstants.PARAMS_MONTH_SCORE, String.valueOf(subs.getMonthScore()));
 				content = content.replace(AppConstants.PARAMS_TOTAL_SCORE, String.valueOf(subs.getTotalScore()));
 				content = content.replace(AppConstants.PARAMS_CURRENT_TIME, new SimpleDateFormat("HH:mm:ss").format(new Date()));
+				content = content.replace(AppConstants.PARAMS_CURRENT_DATE, new SimpleDateFormat("dd/MM/YYYY").format(new Date()));
 				msg.setContent(content);
 			}
 			if(content.contains(AppConstants.PARAMS_CURRENT_MONTH)){

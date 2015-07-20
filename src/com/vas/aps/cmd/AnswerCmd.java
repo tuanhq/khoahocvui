@@ -110,7 +110,7 @@ public class AnswerCmd extends AbstractCmd {
 				}else{
 					mtcontent = AppConstants.MT_ANSWER_CORRECT;
 				}
-				mtcontent = mtcontent.replace("[SCORE_ADD]", " " + scoreBonus + " ");
+				mtcontent = mtcontent.replace("[SCORE]", " " + scoreBonus + " ");
 				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);
 
 			}
@@ -148,8 +148,14 @@ public class AnswerCmd extends AbstractCmd {
 				logger.info(mo.getTransId() + ", subs have denied receiving question daily => ignore return new question");
 			} else {
 				int newCount = AppUtils.getAnsweredCount(subs, channel) + 1;
-				AppUtils.setAnsweredCount(subs, channel, newCount);				
-				Question newQuestion = QuestionFactory.getQuestion(mo.getTransId(), subs, channel);
+				AppUtils.setAnsweredCount(subs, channel, newCount);		
+				Question newQuestion = null;
+				if(answerTh == XmlConfigs.MAX_QUESTION_PER_CHANNEL + count+1){
+					newQuestion = QuestionFactory.getLastQuestion(mo.getTransId(), subs, channel);
+				}else{
+					newQuestion = QuestionFactory.getQuestion(mo.getTransId(), subs, channel);
+				}
+				 
 				String content = newQuestion.getContent();
 				
 				MtHis mt = new MtHis(mo.getTransId(), 0, mo.getMsisdn(), content, mo.getId(), "QT-" + newQuestion.getId(), null, null);

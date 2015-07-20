@@ -1,7 +1,5 @@
 package com.vas.aps.api.mps;
 
-import java.text.SimpleDateFormat;
-
 import javax.jws.WebParam;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
@@ -16,16 +14,14 @@ import com.vas.aps.cmd.AbstractCmd;
 import com.vas.aps.cmd.ActiveDuplicateCmd;
 import com.vas.aps.cmd.BuyQuestionCmd;
 import com.vas.aps.cmd.ChangeQuestionCmd;
-import com.vas.aps.cmd.RegisterCmd;
 import com.vas.aps.comms.AppConstants;
 import com.vas.aps.comms.AppUtils;
 import com.vas.aps.comms.XmlConfigs;
 import com.vas.aps.db.orm.MoHis;
 import com.vas.aps.db.orm.MtHis;
-import com.vas.aps.db.orm.Question;
+import com.vas.aps.db.orm.SubActiveDuplicate;
 import com.vas.aps.db.orm.Subscriber;
 import com.vas.aps.tablecache.MessageFactory;
-import com.vas.aps.tablecache.QuestionFactory;
 
 @WebService(targetNamespace = "http://javax.jws.server", serviceName = "WSAPIService", portName = "WSAPIPort", name = "WSAPI")
 @SOAPBinding(style = SOAPBinding.Style.RPC, use = SOAPBinding.Use.LITERAL, parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
@@ -68,8 +64,20 @@ public class WsBuyContent extends AbsWebservice {
 			//logger.info(transid + ", mode is NOT real => return success");
 			//check user have quota answer
 			
+			
+			if("X2".equalsIgnoreCase(params)){
+				SubActiveDuplicate subActive = baseDAO.getBeanByKey(transid, SubActiveDuplicate.class, msisdn);
+				if(subActive!=null && subActive.getIsEnable()==1){
+					MtHis mt = MessageFactory.getMessage(transid, msisdn, 0, AppConstants.MT_X2_WHEN_ACTIVE, subs);
+					mainApp.getMtQueue().addLast(mt);
+					return "1|Failed";
+				}
+			}
 			int answerTh = AppUtils.getAnsweredCount(subs, "SMS"); 
-			if (answerTh >= XmlConfigs.MAX_QUESTION_PER_CHANNEL ) {
+			String sql ="SELECT IFNULL(sum(number_question),0) FROM sub_buy_question WHERE DATE(date_modified) = CURDATE() and MSISDN = '"+msisdn+"'";
+			Integer count = baseDAO.getFirstCell(transid, sql, Integer.class);
+			
+			if (answerTh >= XmlConfigs.MAX_QUESTION_PER_CHANNEL + count) {
 				logger.info(transid + ", over limit answer for a channel");
 				
 				MtHis mt = MessageFactory.getMessage(transid, msisdn, 0, AppConstants.MT_ANSWER_LAST_QUESTION, subs);
