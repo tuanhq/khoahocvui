@@ -61,11 +61,11 @@ public class RegisterCmd extends AbstractCmd {
 			mainApp.getMtQueue().addLast(mt);
 			resultCmd.addMt(mt);
 		}
-		{
-			MtHis mt = MessageFactory.getMessage(mo, AppConstants.MT_REGISTER_FIRST_MT_2, subs);
-			mainApp.getMtDelay1Queue().addLast(mt);
-			resultCmd.addMt(mt);
-		}
+//		{
+//			MtHis mt = MessageFactory.getMessage(mo, AppConstants.MT_REGISTER_FIRST_MT_2, subs);
+//			mainApp.getMtDelay1Queue().addLast(mt);
+//			resultCmd.addMt(mt);
+//		}
 		logger.info( mo.getTransId() + ", it's valid time to return question");
 		Question question = QuestionFactory.getQuestion(mo.getTransId(), subs, channel);
 		String content = question.getContent(); 

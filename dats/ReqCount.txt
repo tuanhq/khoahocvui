@@ -1,9 +1,9 @@
 #ReqCountManager properties file
-#Tue Jul 21 01:59:15 ICT 2015
-SubscribeListener=62
+#Wed Jul 22 00:57:02 ICT 2015
+SubscribeListener=71
 BuyContentListener=33
 WsApi=20
-MoListener=158
+MoListener=182
 ScanMonfeeCdr=4
 ReturnFirstQues=0
 WsRenewListener=16

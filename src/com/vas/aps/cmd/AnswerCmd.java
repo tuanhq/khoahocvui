@@ -92,7 +92,7 @@ public class AnswerCmd extends AbstractCmd {
 					boChu = "NHAN DOI";
 				}
 			}
-			AppUtils.addScore(subs, scoreBonus);
+			AppUtils.addScore(subs, scoreBonus+plusScore);
 			String temp = lastQuestion.getConfirmCorrectMt();
 			if (BaseUtils.isNotBlank(temp)) {
 				confirmAnswer = new MtHis(mo.getTransId(), 0, mo.getMsisdn(), temp, mo.getId(), "CR-" + lastQuestion.getId(), null, null);
@@ -100,18 +100,17 @@ public class AnswerCmd extends AbstractCmd {
 				String mtcontent = "";
 				if(boChu!=""){
 					if (sodu2 == 1 || sodu2 == 2 || sodu2 == 3) {
-						mtcontent = AppConstants.MT_ANSWER_CORRECTB2.replace("[xxx xxx]", boChu).replace("[SCORE_PLUS]", " " + plusScore + " ");
+						mtcontent = AppConstants.MT_ANSWER_CORRECTB2;
 					} else if (sodu2 == 0 && thuong2 % 2 == 0) {
-						mtcontent = AppConstants.MT_ANSWER_CORRECTB3.replace("[SCORE_PLUS]", " " + plusScore + " ");
+						mtcontent = AppConstants.MT_ANSWER_CORRECTB3;
 						
 					}else if (sodu2 == 0 && thuong2 % 2 == 1)  {
-						mtcontent = AppConstants.MT_ANSWER_CORRECTND.replace("[SCORE_PLUS]", " " + plusScore + " ");						
+						mtcontent = AppConstants.MT_ANSWER_CORRECTND;						
 					}
 				}else{
 					mtcontent = AppConstants.MT_ANSWER_CORRECT;
-				}
-				mtcontent = mtcontent.replace("[SCORE]", " " + scoreBonus + " ");
-				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs);
+				}				
+				confirmAnswer = MessageFactory.getMessage(mo, mtcontent, subs,plusScore,scoreBonus,boChu);				
 
 			}
 		} else {
@@ -150,7 +149,7 @@ public class AnswerCmd extends AbstractCmd {
 				int newCount = AppUtils.getAnsweredCount(subs, channel) + 1;
 				AppUtils.setAnsweredCount(subs, channel, newCount);		
 				Question newQuestion = null;
-				if(answerTh == XmlConfigs.MAX_QUESTION_PER_CHANNEL + count+1){
+				if(answerTh == XmlConfigs.MAX_QUESTION_PER_CHANNEL + count-1){
 					newQuestion = QuestionFactory.getLastQuestion(mo.getTransId(), subs, channel);
 				}else{
 					newQuestion = QuestionFactory.getQuestion(mo.getTransId(), subs, channel);

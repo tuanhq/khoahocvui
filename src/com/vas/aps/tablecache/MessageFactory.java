@@ -59,6 +59,43 @@ public class MessageFactory {
 	public static MtHis getMessage(MoHis mo, String code, Subscriber subs){
 		return getMessage(mo.getTransId(), mo.getMsisdn(), mo.getId(), code, subs);
 	}
+	public static MtHis getMessage(MoHis mo, String code, Subscriber subs,int scorePlus, int score,String bochu){
+		return getMessage(mo.getTransId(), mo.getMsisdn(), mo.getId(), code, subs,scorePlus,score,bochu);
+	}
+	
+	public static MtHis getMessage(String transid, String msisdn, int moId, String code, Subscriber subs, int scorePlus, int score, String bochu){
+		try {
+			ArrayList<Message> listMsg = listData.get(code);
+			Message msg = listMsg.get(random.nextInt(listMsg.size()));
+			String content = msg.getContent();
+			
+			if(subs != null){
+				content = content.replace(AppConstants.PARAMS_DAY_SCORE, String.valueOf(subs.getDayScore()));
+				content = content.replace(AppConstants.PARAMS_WEEK_SCORE, String.valueOf(subs.getWeekScore()));
+				content = content.replace(AppConstants.PARAMS_MONTH_SCORE, String.valueOf(subs.getMonthScore()));
+				content = content.replace(AppConstants.PARAMS_TOTAL_SCORE, String.valueOf(subs.getTotalScore()));
+				content = content.replace(AppConstants.PARAMS_CURRENT_TIME, new SimpleDateFormat("HH:mm:ss").format(new Date()));
+				content = content.replace(AppConstants.PARAMS_CURRENT_DATE, new SimpleDateFormat("dd/MM/YYYY").format(new Date()));
+				
+				
+				content = content.replace(AppConstants.PARAMS_PLUS_SCORE, String.valueOf(scorePlus));
+				content = content.replace(AppConstants.PARAMS_ADD_SCORE, String.valueOf(score));
+				content = content.replace(AppConstants.PARAMS_BO_CHU, String.valueOf(bochu));
+				
+				msg.setContent(content);
+			}
+			if(content.contains(AppConstants.PARAMS_CURRENT_MONTH)){
+				 int curMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
+				 content = content.replace(AppConstants.PARAMS_CURRENT_MONTH, String.valueOf(curMonth));
+				 msg.setContent(content);
+			}
+			return new MtHis(transid, 0, msisdn, msg.getContent(), moId, code, null, null);
+			
+		} catch (Exception e) {
+			logger.info("Not found message with code = " + code);
+		}
+		return null;
+	}
 	
 	public static MtHis getMessage(String transid, String msisdn, int moId, String code, Subscriber subs){
 		try {

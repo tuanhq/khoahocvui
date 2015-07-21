@@ -78,8 +78,11 @@ public class AppConstants {
 	public static String PARAMS_WEEK_SCORE = "[WEEK_SCORE]";
 	public static String PARAMS_MONTH_SCORE = "[MONTH_SCORE]";
 	public static String PARAMS_TOTAL_SCORE = "[TOTAL_SCORE]";
+	public static String PARAMS_PLUS_SCORE = "[SCORE_PLUS]";
+	public static String PARAMS_ADD_SCORE = "[SCORE]";
 	public static String PARAMS_CURRENT_MONTH = "[CUR_MONTH]";
 	public static String PARAMS_CURRENT_TIME = "{hh:mm:ss}";
 	public static String PARAMS_CURRENT_DATE = "{dd/mm/yyy}";
+	public static String PARAMS_BO_CHU = "[xxx xxx]";
 	
 }
